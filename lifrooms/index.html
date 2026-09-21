@@ -32,7 +32,7 @@
           <a href="/lifrooms" class="nav-link" aria-current="page">Về Lifrooms</a>
         </div>
         <div class="nav-item has-dropdown">
-          <a href="/giai-phap" class="nav-link" aria-haspopup="true" aria-expanded="false">
+          <a href="/giai-phap/ota-management" class="nav-link" aria-haspopup="true" aria-expanded="false">
             Giải pháp
             <svg class="chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m6 9 6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
@@ -66,19 +66,18 @@
     <!-- Hero -->
     <section class="hero">
       <div class="container">
-        <div class="hero-banner">
-          <div class="img-placeholder" role="img" aria-label="Ảnh khách sạn thật sẽ thay vào đây">
-            <span>Ảnh hero — thay tại assets/img/hero.jpg</span>
-          </div>
-          <div class="hero-banner-overlay"></div>
+        <div class="hero-banner hero-split">
           <div class="hero-banner-content">
             <h1>Vận hành khách sạn<br>tốt hơn <span class="hl">mỗi ngày</span></h1>
             <p class="lead">Nhiều khách sạn không thiếu tiềm năng, chỉ thiếu một hệ thống vận hành đủ chắc chắn để khai thác hết tiềm năng đó.</p>
             <div class="hero-cta">
               <a href="/lien-he" class="btn btn-primary">Đăng ký ngay</a>
-              <a href="#" class="btn btn-outline" target="_blank" rel="noopener">Xem thêm</a>
+              <a href="/giai-phap/ota-management" class="btn btn-outline" target="_blank" rel="noopener">Xem thêm</a>
             </div>
             <p class="hero-trust">Tư vấn 1:1 · Khách sạn 10–100 phòng · Vận hành toàn diện</p>
+          </div>
+          <div class="hero-banner-media">
+            <img class="hero-banner-img" src="../assets/img/hero.png" alt="Khách sạn vận hành cùng Lifrooms" />
           </div>
         </div>
 
@@ -128,7 +127,6 @@
       <div class="container">
         <div class="story-banner">
           <div class="img-placeholder">
-            <span>Ảnh — thay tại assets/img/story.jpg</span>
           </div>
           <div class="story-panel">
             <span class="eyebrow">Câu chuyện thương hiệu</span>
@@ -169,7 +167,6 @@
             </div>
           </div>
           <div class="img-placeholder">
-            <span>Ảnh — thay tại assets/img/vision.jpg</span>
           </div>
         </div>
       </div>
@@ -184,27 +181,34 @@
         </div>
         <div class="values-split">
           <div class="img-placeholder">
-            <span>Ảnh — thay tại assets/img/values.jpg</span>
           </div>
           <div class="values-list">
             <div class="value-card">
-              <span class="value-num">01</span>
-              <h3>Dữ liệu, không phải cảm tính</h3>
+              <div class="value-head">
+                <span class="value-num">01</span>
+                <h3>Dữ liệu, không phải cảm tính</h3>
+              </div>
               <p>Mọi quyết định, từ định giá phòng đến chọn kênh marketing, đều dựa trên dữ liệu thực tế, không phải phỏng đoán hay chạy theo đối thủ.</p>
             </div>
             <div class="value-card">
-              <span class="value-num">02</span>
-              <h3>Trung thực trong mọi vấn đề</h3>
+              <div class="value-head">
+                <span class="value-num">02</span>
+                <h3>Trung thực trong mọi vấn đề</h3>
+              </div>
               <p>Không có công thức thần kỳ nào giải quyết mọi vấn đề trong một đêm. Lifrooms nói rõ điều gì khả thi, điều gì cần thời gian, thay vì hứa hẹn những gì không thể làm được.</p>
             </div>
             <div class="value-card">
-              <span class="value-num">03</span>
-              <h3>Đồng hành, không chỉ triển khai</h3>
+              <div class="value-head">
+                <span class="value-num">03</span>
+                <h3>Đồng hành, không chỉ triển khai</h3>
+              </div>
               <p>Một hệ thống vận hành tốt cần thời gian để vận hành ổn định. Lifrooms gắn bó cùng khách sạn qua từng giai đoạn, không rời đi ngay sau khi bàn giao.</p>
             </div>
             <div class="value-card">
-              <span class="value-num">04</span>
-              <h3>Vận hành để khách sạn tự đứng vững</h3>
+              <div class="value-head">
+                <span class="value-num">04</span>
+                <h3>Vận hành để khách sạn tự đứng vững</h3>
+              </div>
               <p>Mục tiêu cuối cùng không phải là khiến khách sạn phụ thuộc vào Lifrooms, mà là xây dựng một hệ thống đủ chắc để khách sạn vận hành tốt, dù có hay không có sự can thiệp hàng ngày.</p>
             </div>
           </div>
@@ -238,7 +242,7 @@
             </li>
             <li>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 22s7-6.2 7-12.5A7 7 0 0 0 5 9.5C5 15.8 12 22 12 22Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="12" cy="9.5" r="2.5" stroke="currentColor" stroke-width="1.8"/></svg>
-              <span>TP. Hồ Chí Minh</span>
+              <span>29 Nguyễn Hữu Cảnh, Thạnh Mỹ Tây, TP. Hồ Chí Minh</span>
             </li>
           </ul>
           <div class="footer-social">

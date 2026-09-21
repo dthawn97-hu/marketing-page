@@ -368,13 +368,23 @@ section { padding-block: 88px; }
   overflow: hidden;
   box-shadow: var(--shadow-lg);
 }
-.hero-banner .img-placeholder { position: absolute; inset: 0; border: none; border-radius: 0; }
+.hero-banner .img-placeholder { position: absolute; inset: 0; border: none; border-radius: 0; place-items: start; text-align: left; padding: 16px; }
+.hero-banner-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 .hero-banner-overlay {
   position: absolute;
   inset: 0;
   background: linear-gradient(100deg, rgba(255, 255, 255, 0.92) 0%, rgba(255, 255, 255, 0.72) 42%, rgba(255, 255, 255, 0.1) 72%);
 }
 .hero-banner-content { position: relative; z-index: 1; padding: 48px; max-width: 560px; }
+
+/* Hero split variant: content and photo side by side instead of overlaid (used on the Lifrooms page) */
+.hero-banner.hero-split {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  background: var(--color-surface);
+}
+.hero-banner.hero-split .hero-banner-content { position: static; z-index: auto; padding: 48px; max-width: none; }
+.hero-banner-media { position: relative; min-height: 560px; }
 .hero-banner-content h1 {
   font-size: clamp(32px, 4.2vw, 50px);
   letter-spacing: -0.02em;
@@ -430,6 +440,8 @@ section { padding-block: 88px; }
 @media (max-width: 900px) {
   .hero-banner { min-height: unset; }
   .hero-banner-overlay { background: rgba(255, 255, 255, 0.88); }
+  .hero-banner.hero-split { grid-template-columns: 1fr; }
+  .hero-banner-media { min-height: 280px; }
   .hero-banner-content { padding: 32px 24px; max-width: none; }
   .hero-stats-bar { grid-template-columns: repeat(2, 1fr); margin: -32px 16px 0; }
   .stat-mini:nth-child(2n+1) { border-left: none; }
@@ -502,6 +514,7 @@ section { padding-block: 88px; }
   transition: border-color 200ms ease, box-shadow 200ms ease, transform 200ms ease;
 }
 .value-card:hover { border-color: transparent; box-shadow: var(--shadow-md); transform: translateY(-4px); }
+.value-head { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
 .value-num {
   font-family: var(--font-heading);
   font-weight: 800;
@@ -513,9 +526,10 @@ section { padding-block: 88px; }
   border-radius: 999px;
   display: grid;
   place-items: center;
-  margin-bottom: 18px;
+  flex-shrink: 0;
 }
 .value-card h3 { font-size: 19px; margin-bottom: 10px; }
+.value-head h3 { margin-bottom: 0; }
 .value-card p { font-size: 15.5px; }
 
 @media (max-width: 760px) {
