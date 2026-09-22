@@ -24,6 +24,18 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  document.querySelectorAll("[data-hero-slider]").forEach((slider) => {
+    const slides = slider.querySelectorAll(".hero-slide");
+    const dots = slider.querySelectorAll("[data-hero-dots] button");
+    dots.forEach((dot) => {
+      dot.addEventListener("click", () => {
+        const index = Number(dot.dataset.index);
+        slides.forEach((slide, i) => slide.classList.toggle("is-active", i === index));
+        dots.forEach((d) => d.classList.toggle("is-active", d === dot));
+      });
+    });
+  });
+
   document.querySelectorAll(".filter-tab").forEach((tab) => {
     tab.addEventListener("click", () => {
       document.querySelectorAll(".filter-tab").forEach((t) => t.classList.remove("active"));

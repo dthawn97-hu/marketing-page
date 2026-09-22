@@ -377,6 +377,31 @@ section { padding-block: 88px; }
 }
 .hero-banner-content { position: relative; z-index: 1; padding: 48px; max-width: 560px; }
 
+/* Hero slider: stack of full-bleed .hero-banner slides, one visible at a time, with dot nav */
+.hero-slider { position: relative; }
+.hero-slide { display: none; }
+.hero-slide.is-active { display: flex; }
+.hero-slider-dots {
+  position: absolute;
+  z-index: 3;
+  bottom: 64px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+}
+.hero-slider-dots button {
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  border: none;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 0 1px rgba(15, 43, 74, 0.18), var(--shadow-md);
+  transition: width 200ms ease, background 200ms ease;
+}
+.hero-slider-dots button.is-active { width: 22px; background: var(--color-navy); box-shadow: var(--shadow-md); }
+
 /* Hero split variant: content and photo side by side instead of overlaid (used on the Lifrooms page) */
 .hero-banner.hero-split {
   display: grid;
@@ -815,7 +840,7 @@ section { padding-block: 88px; }
 .photo-card-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(15, 43, 74, 0.9) 0%, rgba(15, 43, 74, 0.8) 45%, rgba(15, 43, 74, 0.68) 100%);
+  background: linear-gradient(180deg, rgba(15, 43, 74, 0.88) 0%, rgba(15, 43, 74, 0.5) 42%, rgba(15, 43, 74, 0.12) 100%);
 }
 .photo-card-body { position: relative; z-index: 1; padding: 20px; color: #fff; }
 .photo-card-label {
@@ -831,7 +856,7 @@ section { padding-block: 88px; }
 .photo-card-body p { margin-top: 10px; font-size: 13.5px; line-height: 1.55; color: rgba(255, 255, 255, 0.85); }
 
 @media (max-width: 760px) {
-  .showcase-photos, .photo-cards { grid-template-columns: 1fr; }
+  .photo-cards { grid-template-columns: 1fr; }
   .showcase-panel { padding: 24px; }
 }
 
@@ -867,3 +892,79 @@ section { padding-block: 88px; }
 @media (max-width: 600px) {
   .form-grid { grid-template-columns: 1fr; }
 }
+
+/* FAQ accordion (native <details>/<summary>, no JS) */
+.faq-list { display: grid; gap: 12px; max-width: 760px; margin: 32px auto 0; }
+.faq-item {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 0 22px;
+}
+.faq-item summary {
+  cursor: pointer;
+  padding: 18px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--color-ink);
+  list-style: none;
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after {
+  content: "+";
+  flex-shrink: 0;
+  font-size: 22px;
+  line-height: 1;
+  color: var(--color-muted);
+}
+.faq-item[open] summary::after { content: "\2013"; }
+.faq-item p { padding-bottom: 20px; font-size: 15px; }
+
+/* CTA banner (teal, full-bleed section background) */
+section.cta-banner {
+  background: #2f6d64;
+  padding-block: 72px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.78);
+}
+.cta-banner h2 { color: #fff; }
+.cta-banner p { margin-top: 12px; font-size: 16.5px; max-width: 52ch; margin-inline: auto; }
+.cta-banner-actions { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; margin-top: 28px; }
+.btn-white { background: #fff; color: #2f6d64; box-shadow: none; }
+.btn-white:hover { background: #f2f2f2; transform: translateY(-2px); }
+
+/* Floating contact widget (Messenger / Zalo / phone), fixed bottom-right on every page */
+.float-contact {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 200;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.float-contact-btn {
+  width: 52px;
+  height: 52px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  box-shadow: var(--shadow-lg);
+  transition: transform 180ms ease;
+}
+.float-contact-btn:hover { transform: scale(1.08); }
+.float-contact-btn.messenger { background: #0084ff; }
+.float-contact-btn.zalo { background: #0068ff; font-family: var(--font-heading); font-weight: 800; font-size: 13px; }
+.float-contact-btn.phone { background: var(--color-navy); }
+@media (max-width: 600px) {
+  .float-contact { right: 14px; bottom: 14px; gap: 10px; }
+  .float-contact-btn { width: 46px; height: 46px; }
+}
+.btn-outline-light { border-color: rgba(255, 255, 255, 0.4); color: #fff; }
+.btn-outline-light:hover { border-color: #fff; color: #fff; transform: translateY(-2px); }
