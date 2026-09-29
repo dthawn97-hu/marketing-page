@@ -656,10 +656,20 @@ section { padding-block: 88px; }
   flex-wrap: wrap;
   gap: 12px;
   justify-content: space-between;
+  align-items: flex-end;
   font-family: var(--font-mono);
   font-size: 12.5px;
   letter-spacing: 0.02em;
 }
+.footer-legal {
+  display: grid;
+  gap: 4px;
+  font-family: var(--font-body);
+  font-size: 13.5px;
+  letter-spacing: 0;
+  line-height: 1.6;
+}
+.footer-legal strong { color: #fff; font-weight: 600; }
 
 @media (max-width: 760px) {
   .footer-grid { grid-template-columns: 1fr; gap: 36px; }
@@ -961,6 +971,12 @@ section.cta-banner {
 .float-contact-btn:hover { transform: scale(1.08); }
 .float-contact-btn.messenger { background: #0084ff; }
 .float-contact-btn.zalo { background: #0068ff; font-family: var(--font-heading); font-weight: 800; font-size: 13px; }
+.float-contact-btn.zalo { animation: zalo-pulse 1.6s ease-out infinite; }
+@keyframes zalo-pulse {
+  0% { box-shadow: var(--shadow-lg), 0 0 0 0 rgba(0, 104, 255, 0.55); }
+  100% { box-shadow: var(--shadow-lg), 0 0 0 16px rgba(0, 104, 255, 0); }
+}
+@media (prefers-reduced-motion: reduce) { .float-contact-btn.zalo { animation: none; } }
 .float-contact-btn.phone { background: var(--color-navy); }
 @media (max-width: 600px) {
   .float-contact { right: 14px; bottom: 14px; gap: 10px; }
@@ -968,3 +984,14 @@ section.cta-banner {
 }
 .btn-outline-light { border-color: rgba(255, 255, 255, 0.4); color: #fff; }
 .btn-outline-light:hover { border-color: #fff; color: #fff; transform: translateY(-2px); }
+
+/* Partner logos (homepage) */
+.partner-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 32px 64px;
+}
+.partner-logos img { opacity: 0.8; transition: opacity 180ms ease; }
+.partner-logos li:hover img { opacity: 1; }
