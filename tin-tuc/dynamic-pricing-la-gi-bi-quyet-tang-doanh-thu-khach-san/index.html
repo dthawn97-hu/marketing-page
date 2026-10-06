@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dynamic pricing là gì? Bí quyết tăng doanh thu khách sạn | Lifrooms</title>
+  <meta name="description" content="Trong ngành kinh doanh khách sạn và lưu trú, việc áp dụng một mức giá cố định cho cả mùa cao điểm lẫn thấp điểm thường khiến doanh nghiệp bỏ lỡ cơ hội bứt phá doanh thu." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="/" class="logo">
+        <span class="logo-mark">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M4 21V10.5L12 4l8 6.5V21h-5v-7H9v7H4Z" stroke="#fff" stroke-width="1.8" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        Lifrooms
+      </a>
+
+      <button class="nav-toggle" aria-label="Mở menu điều hướng" aria-expanded="false" aria-controls="main-nav">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav">
+        <div class="nav-item has-dropdown">
+          <button type="button" class="nav-link" aria-expanded="false" aria-controls="mega-dich-vu">
+            Dịch vụ
+            <svg class="chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m6 9 6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="dropdown mega" id="mega-dich-vu">
+            <div class="mega-col">
+              <p class="mega-title">Giai đoạn set up</p>
+              <a href="/#set-up" class="mega-item">
+                <span class="mega-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18"/><path d="M5 21V8l7-5 7 5v13"/><path d="M9 21v-6h6v6"/></svg></span>
+                <span><strong>Tư vấn set up khách sạn mới</strong><small>Từ bản vẽ đến ngày đón khách</small></span>
+              </a>
+            </div>
+            <div class="mega-col">
+              <p class="mega-title">Giai đoạn vận hành</p>
+              <a href="/giai-phap/ota-management" class="mega-item">
+                <span class="mega-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12a8 8 0 0 1 13.3-5.9"/><path d="M17 3v5h-5"/><path d="M20 12a8 8 0 0 1-13.3 5.9"/><path d="M7 21v-5h5"/></svg></span>
+                <span><strong>OTA Management</strong><small>Giá, tồn phòng, trang thông tin khách sạn, đánh giá của khách</small></span>
+              </a>
+              <a href="/giai-phap/marketing-thue-ngoai" class="mega-item">
+                <span class="mega-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11v2a1 1 0 0 0 1 1h2l5 4V6l-5 4H4a1 1 0 0 0-1 1Z"/><path d="M15 9a3 3 0 0 1 0 6M18 6a7 7 0 0 1 0 12"/></svg></span>
+                <span><strong>Marketing thuê ngoài</strong><small>Tăng đặt phòng trực tiếp</small></span>
+              </a>
+              <a href="/giai-phap/sales-outsource" class="mega-item">
+                <span class="mega-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3 20a6 6 0 0 1 12 0"/><path d="M16 5a3 3 0 0 1 0 6M21 20a6 6 0 0 0-4-5.6"/></svg></span>
+                <span><strong>Sales thuê ngoài</strong><small>Phản hồi nhanh, đa dạng nguồn khách</small></span>
+              </a>
+              <a href="/giai-phap/hanh-chinh-ke-toan" class="mega-item">
+                <span class="mega-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9l-6-6Z"/><path d="M14 3v6h6M8 13h8M8 17h5"/></svg></span>
+                <span><strong>Hành chính &amp; Kế toán</strong><small>Sổ sách, thuế, lương</small></span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="/lifrooms" class="nav-link">Về Lifrooms</a>
+        </div>
+        <div class="nav-item">
+          <a href="/tin-tuc" class="nav-link" aria-current="page">Blog</a>
+        </div>
+        <div class="nav-item">
+          <a href="/lien-he" class="nav-link">Liên hệ</a>
+        </div>
+
+        <div class="header-cta-mobile">
+          <a href="/lien-he#form" class="btn btn-primary">Nhận tư vấn miễn phí</a>
+        </div>
+      </nav>
+
+      <div class="header-cta">
+        <a href="/lien-he#form" class="btn btn-primary btn-sm">Nhận tư vấn miễn phí</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Template bài viết chi tiết: breadcrumb, H1, tác giả · ngày cập nhật · thời gian đọc -->
+    <section class="post-hero">
+      <div class="container post-container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="/">Trang chủ</a>
+          <span aria-hidden="true">/</span>
+          <a href="/tin-tuc">Blog</a>
+          <span aria-hidden="true">/</span>
+          <a href="/tin-tuc#cm-ota-doanh-thu">OTA &amp; Doanh thu</a>
+        </nav>
+        <h1>Dynamic pricing là gì? Bí quyết tăng doanh thu khách sạn</h1>
+        <p class="post-byline">
+          <span class="post-avatar" aria-hidden="true">L</span>
+          <span><strong>LiC Tùng Ngô</strong> · Đội ngũ Lifrooms<br />Cập nhật <time datetime="2026-09-29">29/09/2026</time> · 9 phút đọc</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- Nội dung 720px + mục lục sticky (desktop) / dropdown đầu bài (mobile), tự sinh từ H2 -->
+    <section class="post-section">
+      <div class="container post-layout">
+        <details class="toc" open>
+          <summary>Mục lục</summary>
+          <ol data-toc></ol>
+        </details>
+        <article class="post-body" data-post-body>
+<img class="post-cover" src="https://pub-039da5ee6438424cb70975c731b99a6d.r2.dev/blog/2026-09/317407e2-62ca-486e-a5fb-00288bd7b97f.webp" alt="Dynamic pricing là gì? Bí quyết tăng doanh thu khách sạn" />
+<p>Trong ngành kinh doanh khách sạn và lưu trú, việc áp dụng một mức giá cố định cho cả mùa cao điểm lẫn thấp điểm thường khiến doanh nghiệp bỏ lỡ cơ hội bứt phá doanh thu. Sự ra đời của <strong>Dynamic pricing</strong> (định giá động) chính là giải pháp then chốt giúp các khách sạn tối đa hóa lợi nhuận trên từng phòng bán ra và duy trì tỷ lệ lấp đầy (occupancy rate) ổn định. Đọc ngay bài viết dưới đây từ <strong>Lifrooms</strong> để khám phá toàn bộ kiến thức về chiến lược định giá thông minh này!</p>
+<h2>Dynamic pricing là gì?</h2>
+<p>
+<strong>Dynamic pricing</strong> (định giá động) là chiến lược điều chỉnh giá sản phẩm hoặc dịch vụ một cách linh hoạt theo thời gian thực dựa trên các thuật toán phân tích dữ liệu thị trường, quan hệ cung - cầu, thời gian đặt phòng và hành vi của người tiêu dùng. Thay vì niêm yết một mức giá cố định xuyên suốt năm, doanh nghiệp áp dụng Dynamic pricing sẽ có các mức giá thay đổi linh hoạt theo từng giờ, từng ngày hoặc từng mùa.</p>
+<p>Khác với định giá truyền thống dựa trên công thức cố định (Chi phí + Biên lợi nhuận), Dynamic pricing tập trung vào mức giá mà thị trường và khách hàng sẵn sàng chi trả (<em>willingness to pay</em>) tại đúng thời điểm giao dịch.</p>
+<img src="https://pub-039da5ee6438424cb70975c731b99a6d.r2.dev/blog/2026-09/4c18a9a0-5323-4b73-b13d-810278a601b7.png" alt="Dynamic pricing là gì?" loading="lazy" />
+<h2>Phân loại Dynamic pricing</h2>
+<p>Tùy thuộc vào mục tiêu kinh doanh và mô hình cung cấp dịch vụ, Dynamic pricing được chia thành các dạng phổ biến sau:</p>
+<ul>
+<li>
+<p>
+<strong>Time-based Pricing (Định giá theo thời gian):</strong> Giá sản phẩm hoặc dịch vụ thay đổi tùy thuộc vào thời điểm khách hàng thực hiện giao dịch, thời gian sử dụng hoặc khoảng cách từ lúc đặt đến lúc trải nghiệm dịch vụ. <strong>Ví dụ:</strong> Hàng không niêm yết vé máy bay giá rẻ khi đặt trước nhiều tháng nhưng tăng cao sát ngày bay.</p>
+</li>
+<li>
+<p>
+<strong>Segment Pricing (Định giá theo phân khúc):</strong> Áp dụng các mức giá khác nhau cho từng nhóm đối tượng khách hàng dựa trên đặc điểm nhân khẩu học, vị trí địa lý, kênh mua hàng hoặc mức độ gắn bó với thương hiệu. <strong>Ví dụ:</strong> sàn thương mại điện tử gửi mã giảm giá độc quyền cho tài khoản mới hoặc khách hàng VIP.</p>
+</li>
+</ul>
+<ul>
+<li>
+<p>
+<strong>Peak / Surge Pricing (Định giá theo cao điểm):</strong> Giá tăng đột biến khi nhu cầu thị trường tăng vọt vượt xa khả năng cung ứng có sẵn tại một thời điểm nhất định. <strong>Ví dụ:</strong> các dịp lễ, Tết, hoặc khi có sự kiện âm nhạc, hội nghị lớn các khu vực khách sạn gần các địa điểm đó tăng giá theo.</p>
+</li>
+<li>
+<p>
+<strong>Competitive Pricing (Định giá theo đối thủ):</strong> Giá được điều chỉnh tự động dựa trên biến động giá từ các đối thủ cạnh tranh trực tiếp theo thời gian thực. <strong>Ví dụ:</strong> Shopee sử dụng thuật toán quét giá để tự động hạ giá sản phẩm thấp hơn đối thủ nhằm giữ vị trí top bán chạy.</p>
+</li>
+<li>
+<p>
+<strong>Penetration Pricing (Định giá thâm nhập):</strong> Đưa ra mức giá rất thấp giai đoạn đầu để thu hút người dùng và chiếm thị phần, sau đó điều chỉnh tăng dần khi thương hiệu đã ổn định. <strong>Ví dụ:</strong> Các ứng dụng gọi xe/giao đồ ăn mới ra mắt liên tục tung mã giảm giá 0đ để thu hút người dùng hay khách sạn mới mở chào bán giá trải nghiệm siêu rẻ để lấy lượt đánh giá 5 sao đầu tiên.</p>
+</li>
+</ul>
+<h2>Ưu và nhược điểm của Dynamic pricing</h2>
+<p>Tùy thuộc vào mô hình kinh doanh, Dynamic pricing mang lại những bước tiến vượt bậc giúp doanh nghiệp tối ưu hóa lợi nhuận và nâng cao năng lực cạnh tranh trên thị trường.&nbsp;</p>
+<h3>Ưu điểm của Dynamic pricing</h3>
+<ul>
+<li>
+<p>
+<strong>Phản ứng linh hoạt với thị trường:</strong> Giúp doanh nghiệp chủ động thích ứng ngay lập tức trước những biến động bất ngờ của nền kinh tế hoặc chuỗi cung ứng.</p>
+</li>
+<li>
+<p>
+<strong>Khai thác và thấu hiểu dữ liệu khách hàng:</strong> Giúp doanh nghiệp thu thập dữ liệu hành vi người tiêu dùng, từ đó tối ưu chiến lược bán hàng và tiếp thị.</p>
+</li>
+<li>
+<p>
+<strong>Tăng sức cạnh tranh:</strong> Luôn giữ mức giá hợp lý và hấp dẫn so với các đối thủ trên cùng thị trường.</p>
+</li>
+</ul>
+<img src="https://pub-039da5ee6438424cb70975c731b99a6d.r2.dev/blog/2026-09/86ca5ee8-8982-496f-ba1a-685ce76228dd.jpg" alt="Ưu điểm của Dynamic pricing" loading="lazy" />
+<p>Đặc biệt với ngành dịch vụ khách sạn, Dynamic pricing mang lại những giá trị cốt lõi:</p>
+<ul>
+<li>
+<p>
+<strong>Tối đa hóa chỉ số RevPAR (Doanh thu trên mỗi phòng sẵn có):</strong> Khách sạn có thể tự động tăng giá vào những ngày cháy phòng để thu lợi nhuận tối đa, đồng thời giảm giá nhẹ vào các ngày thấp điểm để đảm bảo công suất phòng.</p>
+</li>
+<li>
+<p>
+<strong>Tối ưu hóa tỷ lệ lấp đầy:</strong> Giảm thiểu tình trạng phòng trống nhờ việc linh hoạt điều chỉnh giá theo sát nhu cầu thực tế của thị trường.</p>
+</li>
+<li>
+<p>
+<strong>Tự động hóa vận hành:</strong> Giúp chủ khách sạn giải phóng thời gian, không cần phải thay đổi giá thủ công trên từng kênh bán phòng (OTA, Website, Direct sales) nhờ các thuật toán thông minh.</p>
+</li>
+</ul>
+<h3>Nhược điểm của Dynamic pricing</h3>
+<ul>
+<li>
+<p>
+<strong>Rủi ro ảnh hưởng đến trải nghiệm và lòng tin khách hàng:</strong> Nếu giá thay đổi quá nhanh hoặc chênh lệch quá lớn mà không có lý do rõ ràng, khách hàng có thể cảm thấy thiếu minh bạch và bị trục lợi.</p>
+</li>
+<li>
+<p>
+<strong>Nguy cơ chiến tranh giá:</strong> Phụ thuộc quá nhiều vào giá đối thủ có thể dẫn đến việc tự động giảm giá sâu, gây ảnh hưởng đến biên lợi nhuận toàn ngành.</p>
+</li>
+<li>
+<p>
+<strong>Yêu cầu cao về công nghệ:</strong> Cần có hệ thống phần mềm và hạ tầng dữ liệu đủ mạnh để phân tích và điều chỉnh giá chính xác theo thời gian thực.</p>
+</li>
+</ul>
+<h2>Những yếu tố cấu tạo Dynamic pricing</h2>
+<p>Để xây dựng một thuật toán hoặc chiến lược Dynamic pricing hiệu quả, doanh nghiệp cần dựa trên 6 yếu tố cốt lõi sau:</p>
+<p>
+<strong>Cung - Cầu thời gian thực: </strong>Số lượng phòng trống hiện tại so với lượng tìm kiếm và nhu cầu đặt phòng của khách hàng.</p>
+<p>
+<strong>Yếu tố thời gian: </strong>Mùa du lịch (mùa cao điểm/thấp điểm), ngày trong tuần (cuối tuần vs. đầu tuần) hoặc khoảng cách từ lúc đặt đến ngày lưu trú.</p>
+<p>
+<strong>Môi trường &amp; Sự kiện: </strong>Thời tiết, ngày lễ tết, hoặc các sự kiện, hội chợ, liveshow âm nhạc diễn ra tại địa phương.</p>
+<p>
+<strong>Giá đối thủ cạnh tranh: </strong>Sự biến động giá phòng của các khách sạn đối thủ cùng phân khúc trong cùng khu vực địa lý.</p>
+<p>
+<strong>Dữ liệu hành vi khách hàng: </strong>Nguồn truy cập, lịch sử tìm kiếm, kênh đặt phòng và mức độ sẵn sàng chi trả của từng phân khúc.</p>
+<p>
+<strong>Chi phí vận hành đầu vào: </strong>Chi phí biến đổi trên mỗi phòng (điện, nước, dọn dẹp, hoa hồng OTA) để đảm bảo điểm hòa vốn.</p>
+<h2>Cách triển khai chiến lược Dynamic pricing</h2>
+<p>Để áp dụng định giá động thành công mà không làm gián đoạn vận hành hay mất lòng khách hàng, bạn nên thực hiện theo các bước sau:</p>
+<p>
+<strong>Bước 1: Xác định mục tiêu kinh doanh rõ ràng:</strong> Doanh nghiệp cần định hình ưu tiên cốt lõi tại từng giai đoạn, muốn gia tăng thị phần, đẩy nhanh tốc độ tiêu thụ hàng tồn/lấp đầy công suất dịch vụ hay tối đa hóa biên lợi nhuận trên mỗi đơn vị bán ra.</p>
+<p>
+<strong>Bước 2: Thu thập và chuẩn hóa dữ liệu đầu vào:</strong> Tập hợp dữ liệu lịch sử bán hàng, xu hướng tiêu dùng, biến động giá của đối thủ cạnh tranh cùng các yếu tố môi trường (thời tiết, ngày lễ, sự kiện) để làm cơ sở tính toán.</p>
+<img src="https://pub-039da5ee6438424cb70975c731b99a6d.r2.dev/blog/2026-09/b43545a0-2e38-4fa7-bfef-5cb0bb7c56ea.jpg" alt="Cách triển khai chiến lược Dynamic pricing" loading="lazy" />
+<p>
+<strong>Bước 3: Lựa chọn công nghệ và phần mềm hỗ trợ:</strong> Đầu tư các giải pháp phần mềm, hệ thống định giá tự động hoặc công cụ phân tích dữ liệu (BI) có tích hợp thuật toán để cập nhật giá theo thời gian thực.</p>
+<p>
+<strong>Bước 4: Thiết lập biên độ giá an toàn (Giá sàn &amp; Giá trần):</strong> Quy định rõ mức giá tối thiểu (để đảm bảo không bán dưới giá vốn) và mức giá tối đa (để tránh gây bức xúc cho khách hàng hoặc làm ảnh hưởng tiêu cực đến uy tín thương hiệu).</p>
+<p>
+<strong>Bước 5: Theo dõi, thử nghiệm và tối ưu liên tục:</strong> Đo lường phản ứng của thị trường sau mỗi lần điều chỉnh giá, thực hiện thử nghiệm A/B để tinh chỉnh công thức định giá sao cho đạt hiệu quả doanh thu cao nhất.</p>
+<h2>Những câu hỏi thường gặp khi thực hiện Dynamic pricing</h2>
+<h3>1. Khách sạn quy mô nhỏ hoặc Homestay có nên áp dụng Dynamic pricing không?</h3>
+<p>
+<strong>Trả lời:</strong> Có. Dù ở quy mô nào, việc điều chỉnh giá linh hoạt theo ngày cuối tuần, mùa du lịch hay các sự kiện địa phương đều giúp tối ưu hóa doanh thu. Các cơ sở nhỏ hoàn toàn có thể bắt đầu bằng việc thiết lập các khung giá theo quy tắc đơn giản trước khi dùng công cụ tự động.</p>
+<h3>2. Làm thế nào để áp dụng Dynamic pricing mà không làm khách hàng cũ tức giận khi thấy giá thay đổi?</h3>
+<p>
+<strong>Trả lời:</strong> Doanh nghiệp nên minh bạch về các chương trình ưu đãi đặt sớm (<em>Early Bird</em>), ưu đãi đặt phút chót (<em>Last-minute deal</em>), hoặc tạo chính sách giá đặc quyền cho hội viên thân thiết nhằm giải thích hợp lý cho sự chênh lệch giá.</p>
+<h3>3. Đặt sàn giá (Floor Price) như thế nào để không bị bán dưới giá vốn?</h3>
+<p>
+<strong>Trả lời:</strong> Mức giá sàn phải dựa trên chi phí biến đổi (Variable Cost) cho mỗi phòng phục vụ (bao gồm giặt ủi, điện nước sinh hoạt, đồ dùng 1 lần và phí hoa hồng kênh bán) cộng thêm một phần nhỏ biên lợi nhuận kỳ vọng.</p>
+<h2>Kết luận</h2>
+<p>
+<strong>Dynamic pricing</strong> không chỉ đơn thuần là việc tăng hay giảm giá phòng, mà là một chiến lược kinh doanh hiện đại dựa trên dữ liệu giúp ngành khách sạn tối ưu hóa doanh thu và nâng cao năng lực cạnh tranh. Việc làm chủ chiến lược định giá động sẽ giúp các chủ khách sạn thích ứng linh hoạt trước mọi biến động của thị trường du lịch.</p>
+<p>Bạn đang sở hữu khách sạn, chuỗi căn hộ dịch vụ và muốn tối ưu hóa doanh thu tự động với công nghệ định giá thông minh? <strong>Lifrooms</strong> đồng hành cùng bạn mang đến giải pháp quản lý và vận hành khách sạn toàn diện nhất!</p>
+<p>Liên hệ hotline Lifrooms ngay hôm nay: <strong>0366071468&nbsp;</strong>
+</p>
+          <aside class="post-cta">
+            <span class="icon-badge navy"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12a8 8 0 0 1 13.3-5.9"/><path d="M17 3v5h-5"/><path d="M20 12a8 8 0 0 1-13.3 5.9"/><path d="M7 21v-5h5"/></svg></span>
+            <div>
+              <p class="post-cta-title">Quản lý và tối ưu OTA</p>
+              <p>Đồng bộ giá, tồn phòng và nội dung; theo dõi doanh thu sau hoa hồng theo kênh.</p>
+            </div>
+            <a href="/giai-phap/ota-management#nhan-tu-van" class="btn btn-primary">Nhận tư vấn miễn phí</a>
+          </aside>
+        </article>
+      </div>
+    </section>
+
+    <!-- 3 bài liên quan -->
+    <section class="section-alt">
+      <div class="container">
+        <div class="cat-head">
+          <h2>Bài viết liên quan</h2>
+          <a href="/tin-tuc" class="cat-more">Xem tất cả <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+        <div class="post-grid">
+          <article class="post-card">
+              <a href="/tin-tuc/chuan-hoa-van-hanh-khach-san-cho-chu-doanh-nghiep" class="post-card-link">
+                <img src="https://pub-039da5ee6438424cb70975c731b99a6d.r2.dev/blog/2026-10/18053ab7-5159-46d6-85be-130337e29a48.webp" alt="" loading="lazy" />
+                <div class="post-card-body">
+                  <span class="post-tag">Vận hành &amp; Hành chính</span>
+                  <h3>Vận hành khách sạn: Quy trình chuẩn 8 bước từ A-Z</h3>
+                  <p>Khám phá quy trình vận hành khách sạn chuẩn từ A-Z, lợi ích thiết thực và các lỗi phổ biến giúp tối ưu doanh thu cùng Lifrooms.</p>
+                  <span class="post-meta"><time datetime="2026-10-02">02/10/2026</time> · 11 phút đọc</span>
+                </div>
+              </a>
+            </article>
+          <article class="post-card is-placeholder">
+              <div class="img-placeholder"></div>
+              <div class="post-card-body">
+                <span class="post-tag">Chuyên mục</span>
+                <h3>[Tiêu đề bài viết sẽ cập nhật]</h3>
+                <p>Tóm tắt ngắn cho bài viết sẽ hiển thị ở đây khi có nội dung thật.</p>
+                <span class="post-meta">Ngày đăng · Thời gian đọc</span>
+              </div>
+            </article>
+          <article class="post-card is-placeholder">
+              <div class="img-placeholder"></div>
+              <div class="post-card-body">
+                <span class="post-tag">Chuyên mục</span>
+                <h3>[Tiêu đề bài viết sẽ cập nhật]</h3>
+                <p>Tóm tắt ngắn cho bài viết sẽ hiển thị ở đây khi có nội dung thật.</p>
+                <span class="post-meta">Ngày đăng · Thời gian đọc</span>
+              </div>
+            </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/" class="logo">
+            <span class="logo-mark">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M4 21V10.5L12 4l8 6.5V21h-5v-7H9v7H4Z" stroke="#fff" stroke-width="1.8" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            Lifrooms
+          </a>
+          <p>Đối tác tư vấn và vận hành kinh doanh cho khách sạn vừa và nhỏ tại Việt Nam.</p>
+          <ul class="footer-contact">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 4h16v16H4z" stroke="currentColor" stroke-width="0"/><path d="m4 6 8 6 8-6M4 6v12h16V6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <a href="mailto:bd@lifrooms.com">bd@lifrooms.com</a>
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L14 13l5 2v4c0 1-1 2-2 2-8 0-15-7-15-15 0-1 1-2 2-2Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+              <a href="https://zalo.me/0366071468" target="_blank" rel="noopener">Zalo: 0366071468</a>
+            </li>
+          </ul>
+        </div>
+
+        <details class="footer-col" open>
+          <summary><h4>Dịch vụ</h4></summary>
+          <ul>
+            <li><a href="/#set-up">Tư vấn set up</a></li>
+            <li><a href="/giai-phap/ota-management">OTA Management</a></li>
+            <li><a href="/giai-phap/marketing-thue-ngoai">Marketing thuê ngoài</a></li>
+            <li><a href="/giai-phap/sales-outsource">Sales thuê ngoài</a></li>
+            <li><a href="/giai-phap/hanh-chinh-ke-toan">Hành chính &amp; Kế toán</a></li>
+          </ul>
+        </details>
+
+        <details class="footer-col" open>
+          <summary><h4>Công ty</h4></summary>
+          <ul>
+            <li><a href="/lifrooms">Về Lifrooms</a></li>
+            <li><a href="/tin-tuc">Blog</a></li>
+            <li><a href="/lien-he">Liên hệ</a></li>
+          </ul>
+        </details>
+
+        <details class="footer-col" open>
+          <summary><h4>Chính sách</h4></summary>
+          <ul>
+            <li><a href="/chinh-sach-bao-mat">Chính sách bảo mật</a></li>
+            <li><a href="/dieu-khoan-su-dung">Điều khoản sử dụng</a></li>
+          </ul>
+        </details>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-legal">
+          <strong>CÔNG TY CỔ PHẦN LIFROOMS</strong>
+          <span>MST: 0319464454</span>
+          <span>Địa chỉ: 29 Nguyễn Hữu Cảnh, Phường Thạnh Mỹ Tây, Thành phố Hồ Chí Minh, Việt Nam</span>
+        </div>
+        <span>© <span id="year"></span> Lifrooms. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="float-contact" aria-label="Liên hệ nhanh">
+    <a href="https://zalo.me/0366071468" class="float-contact-btn zalo" aria-label="Nhắn Zalo" target="_blank" rel="noopener">Zalo</a>
+    <a href="tel:0366071468" class="float-contact-btn phone" aria-label="Gọi 0366 071 468">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+      <span class="float-contact-label">Gọi</span>
+    </a>
+    <a href="/lien-he#form" class="float-contact-btn register">Đăng ký</a>
+  </div>
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>

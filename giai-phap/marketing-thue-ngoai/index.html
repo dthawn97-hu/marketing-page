@@ -28,177 +28,201 @@
       </button>
 
       <nav class="main-nav" id="main-nav">
-        <div class="nav-item">
-          <a href="/" class="nav-link">Trang chủ</a>
+        <div class="nav-item has-dropdown">
+          <button type="button" class="nav-link" aria-expanded="false" aria-controls="mega-dich-vu">
+            Dịch vụ
+            <svg class="chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m6 9 6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="dropdown mega" id="mega-dich-vu">
+            <div class="mega-col">
+              <p class="mega-title">Giai đoạn set up</p>
+              <a href="/#set-up" class="mega-item">
+                <span class="mega-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18"/><path d="M5 21V8l7-5 7 5v13"/><path d="M9 21v-6h6v6"/></svg></span>
+                <span><strong>Tư vấn set up khách sạn mới</strong><small>Từ bản vẽ đến ngày đón khách</small></span>
+              </a>
+            </div>
+            <div class="mega-col">
+              <p class="mega-title">Giai đoạn vận hành</p>
+              <a href="/giai-phap/ota-management" class="mega-item">
+                <span class="mega-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12a8 8 0 0 1 13.3-5.9"/><path d="M17 3v5h-5"/><path d="M20 12a8 8 0 0 1-13.3 5.9"/><path d="M7 21v-5h5"/></svg></span>
+                <span><strong>OTA Management</strong><small>Giá, tồn phòng, trang thông tin khách sạn, đánh giá của khách</small></span>
+              </a>
+              <a href="/giai-phap/marketing-thue-ngoai" class="mega-item" aria-current="page">
+                <span class="mega-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11v2a1 1 0 0 0 1 1h2l5 4V6l-5 4H4a1 1 0 0 0-1 1Z"/><path d="M15 9a3 3 0 0 1 0 6M18 6a7 7 0 0 1 0 12"/></svg></span>
+                <span><strong>Marketing thuê ngoài</strong><small>Tăng đặt phòng trực tiếp</small></span>
+              </a>
+              <a href="/giai-phap/sales-outsource" class="mega-item">
+                <span class="mega-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3 20a6 6 0 0 1 12 0"/><path d="M16 5a3 3 0 0 1 0 6M21 20a6 6 0 0 0-4-5.6"/></svg></span>
+                <span><strong>Sales thuê ngoài</strong><small>Phản hồi nhanh, đa dạng nguồn khách</small></span>
+              </a>
+              <a href="/giai-phap/hanh-chinh-ke-toan" class="mega-item">
+                <span class="mega-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9l-6-6Z"/><path d="M14 3v6h6M8 13h8M8 17h5"/></svg></span>
+                <span><strong>Hành chính &amp; Kế toán</strong><small>Sổ sách, thuế, lương</small></span>
+              </a>
+            </div>
+          </div>
         </div>
         <div class="nav-item">
           <a href="/lifrooms" class="nav-link">Về Lifrooms</a>
         </div>
-        <div class="nav-item has-dropdown">
-          <a href="/giai-phap/ota-management" class="nav-link" aria-haspopup="true" aria-expanded="false">
-            Giải pháp
-            <svg class="chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m6 9 6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </a>
-          <div class="dropdown">
-            <a href="/giai-phap/ota-management">OTA Management</a>
-            <a href="/giai-phap/marketing-thue-ngoai" aria-current="page">Marketing thuê ngoài</a>
-            <a href="/giai-phap/sales-outsource">Sales thuê ngoài</a>
-            <a href="/giai-phap/hanh-chinh-ke-toan">Hành chính &amp; Kế toán</a>
-          </div>
-        </div>
         <div class="nav-item">
-          <a href="/tin-tuc" class="nav-link">Tin tức</a>
+          <a href="/tin-tuc" class="nav-link">Blog</a>
         </div>
         <div class="nav-item">
           <a href="/lien-he" class="nav-link">Liên hệ</a>
         </div>
 
         <div class="header-cta-mobile">
-          <a href="/lien-he" class="btn btn-primary">Đăng ký ngay</a>
+          <a href="/lien-he#form" class="btn btn-primary">Nhận tư vấn miễn phí</a>
         </div>
       </nav>
 
       <div class="header-cta">
-        <a href="/lien-he" class="btn btn-primary btn-sm">Đăng ký ngay</a>
+        <a href="/lien-he#form" class="btn btn-primary btn-sm">Nhận tư vấn miễn phí</a>
       </div>
     </div>
   </header>
 
   <main>
 
-    <!-- Header: ảnh banner, nội dung Lifrooms sẽ gửi lại sau -->
-    <section class="hero">
+    <!-- Hero - Marketing thuê ngoài (banner như các trang dịch vụ khác: chữ trái, ảnh phải); breadcrumb ngay trên H1 -->
+    <section class="hero hero-service">
       <div class="container">
         <div class="hero-banner">
-          <div class="img-placeholder" role="img" aria-label="Ảnh banner Marketing thuê ngoài sẽ thay vào đây">
+          <div class="img-placeholder" role="img" aria-label="Ảnh khách sạn thật hoặc mockup fanpage/website khách sạn (dữ liệu minh họa) sẽ thay vào đây">
           </div>
           <div class="hero-banner-overlay"></div>
           <div class="hero-banner-content">
-            <span class="eyebrow">Giải pháp</span>
-            <h1>Marketing thuê ngoài</h1>
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+              <a href="/">Trang chủ</a>
+              <span aria-hidden="true">/</span>
+              <a href="/#dich-vu">Dịch vụ</a>
+              <span aria-hidden="true">/</span>
+              <span aria-current="page">Marketing thuê ngoài</span>
+            </nav>
+            <span class="eyebrow">Marketing thuê ngoài cho khách sạn</span>
+            <h1>Thu hút đúng khách, tăng cơ hội đặt phòng trực tiếp</h1>
+            <p class="lead">Lifrooms xây nội dung và kế hoạch quảng bá theo thị trường, mùa vụ và nhóm khách mục tiêu. Từ lúc khách tìm thấy khách sạn đến khi gửi yêu cầu đặt phòng, mỗi điểm chạm đều có mục tiêu rõ ràng và được theo dõi bằng kết quả thực tế.</p>
+            <div class="hero-cta cta-pair">
+              <a href="#form" class="btn btn-primary"><span class="label-full">Nhận tư vấn miễn phí</span><span class="label-short">Tư vấn</span></a>
+              <a href="#pham-vi" class="btn btn-outline"><span class="label-full">Khám phá phạm vi dịch vụ</span><span class="label-short">Khám phá</span></a>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Vấn đề gặp phải -->
+    <!-- Vấn đề gặp phải: lưới 5 thẻ (3 + 2 căn giữa); mobile list dọc icon trái - chữ phải -->
     <section class="section-alt">
       <div class="container">
-        <div class="panel-card">
-          <div class="split-head">
-            <div>
-              <span class="eyebrow">Vấn đề gặp phải?</span>
-              <h2 style="margin-top:14px;">Đăng bài đều, nhưng booking không tăng</h2>
-            </div>
-            <p>Nhiều khách sạn có fanpage, có chạy quảng cáo, nhưng vẫn phụ thuộc gần như hoàn toàn vào OTA để có khách.</p>
+        <div class="section-head" style="max-width: 720px; margin-inline: auto; text-align: center;">
+          <span class="eyebrow" style="justify-content: center;">Vấn đề gặp phải</span>
+          <h2>Khách đã tìm thấy, vì sao đơn vẫn về kênh khác?</h2>
+        </div>
+        <div class="signal-grid centered">
+          <div class="signal-card">
+            <span class="signal-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></span>
+            <h3>Thương hiệu thiếu hiện diện</h3>
+            <p>Khách tìm tên khách sạn nhưng trang chính thức chưa đủ nổi bật để họ truy cập.</p>
           </div>
-          <div class="metric-grid cols-2">
-            <div class="value-card">
-              <div class="value-head">
-                <span class="icon-badge navy">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
-                </span>
-                <h3>Nội dung thiếu chiến lược</h3>
-              </div>
-              <p>Fanpage đăng bài đều đặn nhưng không có chiến lược rõ ràng, không biết nội dung nào thực sự ra booking.</p>
-              <a href="#nhan-tu-van" class="read-more">Xem thêm →</a>
-            </div>
-            <div class="value-card">
-              <div class="value-head">
-                <span class="icon-badge teal">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="M7 13v5"/><path d="M12 9v9"/><path d="M17 5v13"/></svg>
-                </span>
-                <h3>Quảng cáo không đo lường</h3>
-              </div>
-              <p>Chạy quảng cáo nhưng không đo lường được hiệu quả, ngân sách "bay" mà không rõ vì sao.</p>
-              <a href="#nhan-tu-van" class="read-more">Xem thêm →</a>
-            </div>
-            <div class="value-card">
-              <div class="value-head">
-                <span class="icon-badge navy">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
-                </span>
-                <h3>Hình ảnh chưa nổi bật</h3>
-              </div>
-              <p>Hình ảnh, mô tả không đủ nổi bật để cạnh tranh giữa hàng chục lựa chọn khác.</p>
-              <a href="#nhan-tu-van" class="read-more">Xem thêm →</a>
-            </div>
-            <div class="value-card">
-              <div class="value-head">
-                <span class="icon-badge teal">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8Z"/></svg>
-                </span>
-                <h3>Thiếu câu chuyện thương hiệu</h3>
-              </div>
-              <p>Không có câu chuyện thương hiệu riêng, khách khó nhớ, khó quay lại.</p>
-              <a href="#nhan-tu-van" class="read-more">Xem thêm →</a>
-            </div>
+          <div class="signal-card">
+            <span class="signal-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="10" r="2"/><path d="m21 15-5-5L5 19"/></svg></span>
+            <h3>Trải nghiệm chưa thuyết phục</h3>
+            <p>Ảnh, nội dung, giá và chính sách chưa cho khách lý do chọn đặt trực tiếp.</p>
           </div>
-          <div style="text-align:center; margin-top:36px;">
-            <a href="#nhan-tu-van" class="btn btn-outline">Xem thêm giải pháp</a>
+          <div class="signal-card">
+            <span class="signal-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 17H7a5 5 0 0 1 0-10h2"/><path d="M15 7h2a5 5 0 0 1 0 10h-2"/><path d="M8 12h2M14 12h2"/></svg></span>
+            <h3>Đường đặt phòng đứt đoạn</h3>
+            <p>Từ Google, mạng xã hội đến website hoặc Zalo có quá nhiều bước để chốt phòng.</p>
+          </div>
+          <div class="signal-card">
+            <span class="signal-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M2 20h20"/></svg></span>
+            <h3>Chi quảng cáo khó đo</h3>
+            <p>Báo cáo có lượt nhấp, nhưng chưa rõ yêu cầu nào trở thành đặt phòng.</p>
+          </div>
+          <div class="signal-card">
+            <span class="signal-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg></span>
+            <h3>Khách cũ ít quay lại</h3>
+            <p>Khách sạn chưa có cách giữ liên hệ phù hợp sau lưu trú.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Giải pháp của chúng tôi -->
+    <!-- Phù hợp với ai: checklist + ảnh; mobile 1 cột, ẩn ảnh -->
     <section>
       <div class="container">
-        <div class="showcase-panel">
-          <div class="showcase-photos">
-            <div class="img-placeholder"></div>
-            <div class="img-placeholder"></div>
+        <div class="values-split fit-split" style="align-items: center;">
+          <div>
+            <span class="eyebrow">Phù hợp với ai</span>
+            <h2 style="margin-top:14px;">Khi nào khách sạn cần một kế hoạch marketing riêng?</h2>
+            <ul class="check-list">
+              <li><span class="compare-mark" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></span><span>Có fanpage/website nhưng phần lớn đặt phòng vẫn đến từ OTA</span></li>
+              <li><span class="compare-mark" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></span><span>Đã chạy quảng cáo nhưng không biết mỗi đặt phòng tốn bao nhiêu</span></li>
+              <li><span class="compare-mark" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></span><span>Không có người chuyên làm nội dung, hình ảnh</span></li>
+              <li><span class="compare-mark" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></span><span>Sắp khai trương hoặc vừa nâng cấp, cần ra mắt thương hiệu</span></li>
+            </ul>
           </div>
-
-          <div class="split-head">
-            <div>
-              <span class="eyebrow">Giải pháp của chúng tôi</span>
-              <h2 style="margin-top:14px;">Lifrooms giải quyết như thế nào?</h2>
-            </div>
-            <p>Từ chiến lược nội dung, quảng cáo có đo lường đến kênh booking trực tiếp, Lifrooms đồng hành giúp khách sạn giảm dần phụ thuộc vào OTA.</p>
-          </div>
-
-          <div class="photo-cards">
-            <div class="photo-card">
-              <div class="img-placeholder"></div>
-              <div class="photo-card-overlay"></div>
-              <div class="photo-card-body">
-                <div class="photo-card-label">
-                  <span>Xây dựng chiến lược nội dung có mục tiêu</span>
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
-                </div>
-                <p>Nội dung được lên kế hoạch theo mục tiêu rõ ràng, xây nhận diện, tạo niềm tin, thúc đẩy booking. Hình ảnh được nâng cấp để khách sạn nổi bật hơn trên fanpage, website và các kênh OTA.</p>
-              </div>
-            </div>
-            <div class="photo-card">
-              <div class="img-placeholder"></div>
-              <div class="photo-card-overlay"></div>
-              <div class="photo-card-body">
-                <div class="photo-card-label">
-                  <span>Chạy quảng cáo có đo lường</span>
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
-                </div>
-                <p>Triển khai quảng cáo Facebook/Google với mục tiêu rõ ràng, theo dõi hiệu quả để tối ưu ngân sách, thay vì chạy quảng cáo rồi không biết đã mang lại bao nhiêu booking thực tế.</p>
-              </div>
-            </div>
-            <div class="photo-card">
-              <div class="img-placeholder"></div>
-              <div class="photo-card-overlay"></div>
-              <div class="photo-card-body">
-                <div class="photo-card-label">
-                  <span>Tăng tỷ lệ đặt phòng trực tiếp</span>
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
-                </div>
-                <p>Xây dựng kênh booking trực tiếp (website, fanpage) song song với OTA, giảm dần sự phụ thuộc vào phí hoa hồng trung gian.</p>
-              </div>
-            </div>
-          </div>
+          <div class="img-placeholder" role="img" aria-label="Ảnh minh họa khách sạn sẽ thay vào đây"></div>
         </div>
+      </div>
+    </section>
+
+    <!-- Lifrooms làm gì (phạm vi công việc): zig-zag 5 hàng ảnh - chữ xen kẽ; mobile ảnh trên, chữ dưới -->
+    <section class="section-alt" id="pham-vi">
+      <div class="container">
+        <div class="section-head" style="max-width: 720px; margin-inline: auto; text-align: center;">
+          <span class="eyebrow" style="justify-content: center;">Phạm vi công việc</span>
+          <h2>Nối nội dung, quảng cáo và điểm đặt phòng thành một hành trình</h2>
+        </div>
+        <ol class="zigzag">
+          <li class="zigzag-row">
+            <div class="img-placeholder" role="img" aria-label="Mockup phân tích thị trường và mùa vụ sẽ thay vào đây"><span>Mockup phân tích thị trường và mùa vụ</span></div>
+            <div class="zigzag-text">
+              <span class="zigzag-num">01</span>
+              <h3>Phân tích thị trường và khách mục tiêu</h3>
+              <p>Mùa vụ, lý do lưu trú, nhu cầu từng phân khúc.</p>
+            </div>
+          </li>
+          <li class="zigzag-row">
+            <div class="img-placeholder" role="img" aria-label="Mockup kế hoạch nội dung sẽ thay vào đây"><span>Mockup kế hoạch nội dung</span></div>
+            <div class="zigzag-text">
+              <span class="zigzag-num">02</span>
+              <h3>Chuẩn hóa thông điệp và nội dung</h3>
+              <p>Điểm khác biệt, hình ảnh phòng, tiện nghi, vị trí, chính sách.</p>
+            </div>
+          </li>
+          <li class="zigzag-row">
+            <div class="img-placeholder" role="img" aria-label="Mockup Google Maps, fanpage, quảng cáo sẽ thay vào đây"><span>Mockup Google Maps, fanpage, quảng cáo</span></div>
+            <div class="zigzag-text">
+              <span class="zigzag-num">03</span>
+              <h3>Tăng hiện diện</h3>
+              <p>Website, Google Business Profile, mạng xã hội và quảng cáo theo các kênh đã thống nhất.</p>
+            </div>
+          </li>
+          <li class="zigzag-row">
+            <div class="img-placeholder" role="img" aria-label="Mockup nút gọi, Zalo, form đặt phòng sẽ thay vào đây"><span>Mockup nút gọi, Zalo, form đặt phòng</span></div>
+            <div class="zigzag-text">
+              <span class="zigzag-num">04</span>
+              <h3>Tạo đường dẫn chuyển đổi</h3>
+              <p>Nút gọi, Zalo, form hoặc công cụ đặt phòng và quy trình chuyển yêu cầu cho sales/lễ tân.</p>
+            </div>
+          </li>
+          <li class="zigzag-row">
+            <div class="img-placeholder" role="img" aria-label="Mockup báo cáo theo kênh sẽ thay vào đây"><span>Mockup báo cáo theo kênh</span></div>
+            <div class="zigzag-text">
+              <span class="zigzag-num">05</span>
+              <h3>Báo cáo</h3>
+              <p>Yêu cầu đặt phòng đủ điều kiện, tỷ lệ chuyển thành đặt phòng, chi phí theo kênh khi theo dõi được.</p>
+            </div>
+          </li>
+        </ol>
+        <p class="scope-note zigzag-note">Sản xuất ảnh/video, quản lý website và ngân sách quảng cáo thuộc phạm vi tùy chọn.</p>
       </div>
     </section>
 
     <!-- Google Hotels -->
-    <section class="section-alt">
+    <section>
       <div class="container">
         <div class="values-split">
           <div class="img-placeholder"><span>Ảnh khách sạn hiển thị trên Google Hotels / Google Maps</span></div>
@@ -248,66 +272,211 @@
       </div>
     </section>
 
-    <!-- Form đăng ký -->
-    <section id="nhan-tu-van">
+    <!-- Đầu ra bàn giao: thẻ "file" + badge tần suất; desktop 2 cột, mobile thẻ dọc -->
+    <section class="section-alt">
       <div class="container">
-        <div class="values-split" style="align-items:center;">
-          <div>
-            <span class="eyebrow">Nhận tư vấn</span>
-            <h2 style="margin-top:14px;">Lifrooms sẵn sàng đồng hành cùng bạn</h2>
-            <p style="margin-top:18px; font-size:16.5px;">Để lại thông tin hoặc liên hệ trực tiếp, đội ngũ Lifrooms sẽ phản hồi nhanh nhất để đánh giá tình trạng vận hành và đề xuất hướng phù hợp cho khách sạn của bạn.</p>
-            <div style="display:flex; gap:14px; flex-wrap:wrap; margin-top:26px;">
-              <a href="tel:0366071468" class="btn btn-primary">Tư vấn ngay</a>
-              <a href="/lifrooms" class="btn btn-outline">Về Lifrooms</a>
-            </div>
-            <div style="display:grid; gap:18px; margin-top:34px;">
-              <div style="display:flex; gap:14px; align-items:center;">
-                <span class="icon-badge navy">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
-                </span>
-                <div>
-                  <div style="font-size:13px; color:var(--color-muted);">Gọi ngay hotline (Zalo)</div>
-                  <div style="font-weight:700; font-size:17px; color:var(--color-ink);">0366 071 468</div>
-                </div>
-              </div>
-              <div style="display:flex; gap:14px; align-items:center;">
-                <span class="icon-badge teal">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
-                </span>
-                <div>
-                  <div style="font-size:13px; color:var(--color-muted);">Phản hồi qua email</div>
-                  <div style="font-weight:700; font-size:17px;"><a href="mailto:bd@lifrooms.com" style="color:var(--color-ink);">bd@lifrooms.com</a></div>
-                </div>
-              </div>
-            </div>
+        <div class="section-head" style="max-width: 720px; margin-inline: auto; text-align: center;">
+          <span class="eyebrow" style="justify-content: center;">Đầu ra bàn giao</span>
+          <h2>Từ kế hoạch theo mùa đến nội dung có mục tiêu rõ ràng</h2>
+        </div>
+        <ul class="file-list">
+          <li class="file-card"><span class="file-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9l-6-6Z"/><path d="M14 3v6h6"/></svg></span><strong>Kế hoạch marketing theo mùa</strong><span class="file-badge">Theo mùa</span></li>
+          <li class="file-card"><span class="file-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9l-6-6Z"/><path d="M14 3v6h6"/></svg></span><strong>Lịch nội dung</strong><span class="file-badge">Định kỳ</span></li>
+          <li class="file-card"><span class="file-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9l-6-6Z"/><path d="M14 3v6h6"/></svg></span><strong>Nội dung và quảng cáo theo phạm vi hợp tác</strong><span class="file-badge">Theo phạm vi</span></li>
+          <li class="file-card"><span class="file-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9l-6-6Z"/><path d="M14 3v6h6"/></svg></span><strong>Báo cáo chi phí, yêu cầu đặt phòng và kết quả từng kênh</strong><span class="file-badge">Định kỳ</span></li>
+        </ul>
+        <p class="file-note">Danh mục, khối lượng và tần suất báo cáo được thống nhất khi tư vấn.</p>
+      </div>
+    </section>
+
+    <!-- Cách phối hợp: 3 cột vai trò + dải "Tài khoản & ngân sách" nổi bật (icon ổ khóa); mobile xếp dọc -->
+    <section>
+      <div class="container">
+        <div class="section-head" style="max-width: 720px; margin-inline: auto; text-align: center;">
+          <span class="eyebrow" style="justify-content: center;">Cách phối hợp</span>
+          <h2>Marketing tạo nhu cầu, đội bán phòng tiếp nhận đúng lúc</h2>
+        </div>
+        <div class="role-grid cols-3">
+          <div class="role-card">
+            <span class="icon-badge navy"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M5.6 5.6l2.8 2.8M15.6 15.6l2.8 2.8M5.6 18.4l2.8-2.8M15.6 8.4l2.8-2.8"/></svg></span>
+            <h3>Lifrooms</h3>
+            <p>Đề xuất kế hoạch, nội dung và kênh quảng bá; theo dõi hiệu quả theo phạm vi hợp tác.</p>
           </div>
+          <div class="role-card">
+            <span class="icon-badge teal"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 21V10.5L12 4l8 6.5V21h-5v-7H9v7H4Z"/></svg></span>
+            <h3>Khách sạn</h3>
+            <p>Cung cấp thông tin phòng, chính sách và ưu đãi; duyệt nội dung và xử lý yêu cầu đặt phòng.</p>
+          </div>
+          <div class="role-card">
+            <span class="icon-badge navy"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m11 17 2 2a1 1 0 0 0 1.4 0l4.6-4.6a2 2 0 0 0 0-2.8L14 6.6a2 2 0 0 0-2.8 0L10 7.8"/><path d="m3 13 4 4 3-3"/><path d="M3 9.5 6.5 6a2 2 0 0 1 2.8 0L13 9.7"/></svg></span>
+            <h3>Cùng thống nhất</h3>
+            <p>Ngân sách, tài khoản quảng cáo, người phê duyệt và quy trình chuyển yêu cầu cho sales hoặc lễ tân.</p>
+          </div>
+        </div>
+        <div class="security-note">
+          <span class="security-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/><path d="M12 15v2"/></svg></span>
+          <div>
+            <h3>Tài khoản &amp; ngân sách</h3>
+            <p>Ngân sách, tài khoản quảng cáo và người phê duyệt được thống nhất trước khi triển khai.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-          <div class="form-card left">
-            <h2 style="font-size:22px;">Khách sạn bạn đang cần tối ưu ở mảng nào?</h2>
-            <p>Để lại thông tin, đội ngũ Lifrooms sẽ đánh giá tình trạng vận hành hiện tại và đề xuất hướng phù hợp, miễn phí.</p>
+    <!-- Chỉ số theo dõi hiệu quả: lưới KPI tile 3 + 2 + 1 dòng chỉ số phụ; mobile 2 cột -->
+    <section class="section-alt">
+      <div class="container">
+        <div class="section-head" style="max-width: 720px; margin-inline: auto; text-align: center;">
+          <span class="eyebrow" style="justify-content: center;">Chỉ số theo dõi hiệu quả</span>
+          <h2>Đo bằng cơ hội đặt phòng, không dừng ở lượt thích</h2>
+        </div>
+        <div class="kpi-grid centered">
+          <div class="kpi-tile">
+            <span class="kpi-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6h11M9 12h11M9 18h11"/><path d="m3 6 1 1 2-2M3 12l1 1 2-2M3 18l1 1 2-2"/></svg></span>
+            <h3>Yêu cầu đặt phòng đủ điều kiện</h3>
+            <p>Có ngày lưu trú, số khách và thông tin liên hệ.</p>
+          </div>
+          <div class="kpi-tile">
+            <span class="kpi-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16l-6 8v6l-4 2v-8L4 4Z"/></svg></span>
+            <h3>Tỷ lệ phản hồi và tỷ lệ chuyển</h3>
+            <p>Từ yêu cầu sang đặt phòng xác nhận.</p>
+          </div>
+          <div class="kpi-tile">
+            <span class="kpi-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M14.5 9.5c-.5-1-1.5-1.5-2.5-1.5-1.4 0-2.5.8-2.5 2s1.1 1.7 2.5 2 2.5.8 2.5 2-1.1 2-2.5 2c-1 0-2-.5-2.5-1.5M12 6.5V8M12 16v1.5"/></svg></span>
+            <h3>Chi phí cho mỗi yêu cầu đủ điều kiện và mỗi đặt phòng</h3>
+            <p>Nếu truy vết được.</p>
+          </div>
+          <div class="kpi-tile">
+            <span class="kpi-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-9-9v9h9Z"/><path d="M15 3.5A9 9 0 0 1 20.5 9H15V3.5Z"/></svg></span>
+            <h3>Tỷ trọng đặt phòng trực tiếp và doanh thu phòng theo nguồn</h3>
+            <p>Định nghĩa tránh trùng OTA.</p>
+          </div>
+          <div class="kpi-tile">
+            <span class="kpi-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg></span>
+            <h3>ROAS</h3>
+            <p>Chỉ hiển thị khi doanh thu đặt phòng được gắn đáng tin cậy với quảng cáo và đã xử lý hủy/hoàn.</p>
+          </div>
+        </div>
+        <p class="file-note">Lượt xem và tương tác là chỉ số hỗ trợ, không thay thế kết quả bán phòng.</p>
+      </div>
+    </section>
 
-            <form class="form-grid" action="#" method="post">
+    <!-- FAQ - Marketing: accordion 1 cột, căn giữa 800px -->
+    <section>
+      <div class="container faq-single">
+        <div class="section-head" style="text-align: center; margin-inline: auto;">
+          <span class="eyebrow" style="justify-content: center;">Hỏi &amp; đáp</span>
+          <h2>Câu hỏi thường gặp về Marketing thuê ngoài</h2>
+        </div>
+        <div class="faq-list">
+          <details class="faq-item" open>
+            <summary>Ngân sách quảng cáo cần bao nhiêu?</summary>
+            <p>Mức ngân sách tùy thị trường, mùa vụ và mục tiêu đặt phòng; Lifrooms đề xuất sau khi hiểu hiện trạng.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Ai quản lý tài khoản quảng cáo?</summary>
+            <p>Quyền sở hữu tài khoản, quyền truy cập và thanh toán ngân sách được thống nhất khi triển khai.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Có cần đầu tư lại ảnh và video không?</summary>
+            <p>Lifrooms đánh giá chất lượng tư liệu hiện có trước khi đề xuất hạng mục sản xuất thêm.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Bao lâu thì đặt phòng trực tiếp tăng?</summary>
+            <p>Mốc đánh giá dựa trên dữ liệu đầu vào, ngân sách và khả năng theo dõi đặt phòng.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Form đăng ký: khối nền màu thương hiệu, 5/7 = H2 + mô tả + 3 dòng tin cậy + Zalo/email | form (mobile: form trước) -->
+    <section class="lead-band" id="nhan-tu-van">
+      <div class="container lead-grid">
+        <div class="lead-copy">
+          <span class="eyebrow">Nhận tư vấn</span>
+          <h2 style="margin-top:14px;">Kênh nào đang mang khách đến, kênh nào chỉ mang lượt xem?</h2>
+          <p style="margin-top:16px; font-size:16.5px;">Để lại thông tin, Lifrooms sẽ xem fanpage, website và quảng cáo hiện tại của khách sạn và đề xuất hướng tăng đặt phòng trực tiếp.</p>
+          <ul class="check-list">
+            <li><span class="compare-mark" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></span><span>Trao đổi dựa trên hiện trạng khách sạn</span></li>
+            <li><span class="compare-mark" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></span><span>Đề xuất rõ phạm vi và chỉ số trước khi hợp tác</span></li>
+            <li><span class="compare-mark" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></span><span>Thời gian phản hồi sẽ được xác nhận sau</span></li>
+          </ul>
+          <div class="contact-links">
+            <a href="https://zalo.me/0366071468" class="contact-link" target="_blank" rel="noopener">
+              <span class="icon-badge navy"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H8l-5 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10Z"/></svg></span>
+              <span><small>Nhắn Zalo</small><strong>0366071468</strong></span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a href="mailto:bd@lifrooms.com" class="contact-link">
+              <span class="icon-badge teal"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+              <span><small>Email</small><strong>bd@lifrooms.com</strong></span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="form-card left" id="form">
+          <h2 style="font-size:22px;">Khách sạn bạn đang cần tối ưu ở mảng nào?</h2>
+            <form class="form-grid" action="#" method="post" novalidate data-lead-form>
+              <input type="hidden" name="trang_nguon" value="" />
               <div class="field">
-                <label for="mkt-name">Họ tên</label>
-                <input id="mkt-name" name="name" type="text" required autocomplete="name" />
+                <label for="mk-name">Họ tên <span class="req" aria-hidden="true">*</span></label>
+                <input id="mk-name" name="name" type="text" required autocomplete="name" />
               </div>
               <div class="field">
-                <label for="mkt-phone">Số điện thoại</label>
-                <input id="mkt-phone" name="phone" type="tel" required autocomplete="tel" />
+                <label for="mk-phone">Số điện thoại/Zalo <span class="req" aria-hidden="true">*</span></label>
+                <input id="mk-phone" name="phone" type="tel" inputmode="tel" required autocomplete="tel" data-vn-phone />
+              </div>
+              <div class="field">
+                <label for="mk-email">Email <span class="req" aria-hidden="true">*</span></label>
+                <input id="mk-email" name="email" type="email" required autocomplete="email" />
+              </div>
+              <div class="field">
+                <label for="mk-hotel">Tên khách sạn</label>
+                <input id="mk-hotel" name="hotel" type="text" autocomplete="organization" />
+              </div>
+              <div class="field">
+                <label for="mk-rooms">Số phòng</label>
+                <select id="mk-rooms" name="rooms">
+                  <option value="">Chọn số phòng</option>
+                  <option>Dưới 10</option>
+                  <option>10 - 30</option>
+                  <option>31 - 60</option>
+                  <option>61 - 100</option>
+                  <option>Trên 100</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="mk-city">Tỉnh/thành</label>
+                <input id="mk-city" name="city" type="text" autocomplete="address-level1" />
+              </div>
+              <fieldset class="field full chip-group">
+                <legend>Dịch vụ quan tâm <span style="font-weight:400; color:var(--color-muted);">(chọn nhiều)</span></legend>
+                <label class="chip-check"><input type="checkbox" name="services" value="set-up" /><span>Tư vấn set up</span></label>
+                <label class="chip-check"><input type="checkbox" name="services" value="ota-management" /><span>OTA Management</span></label>
+                <label class="chip-check"><input type="checkbox" name="services" value="marketing-thue-ngoai" checked /><span>Marketing thuê ngoài</span></label>
+                <label class="chip-check"><input type="checkbox" name="services" value="sales-outsource" /><span>Sales thuê ngoài</span></label>
+                <label class="chip-check"><input type="checkbox" name="services" value="hanh-chinh-ke-toan" /><span>Hành chính &amp; Kế toán</span></label>
+              </fieldset>
+              <div class="field full">
+                <label for="mk-link">Link fanpage/website khách sạn <span style="font-weight:400; color:var(--color-muted);">(không bắt buộc)</span></label>
+                <input id="mk-link" name="link" type="url" inputmode="url" placeholder="https://" autocomplete="url" />
               </div>
               <div class="field full">
-                <label for="mkt-email">Email</label>
-                <input id="mkt-email" name="email" type="email" required autocomplete="email" />
+                <label for="mk-issue">Vấn đề khách sạn của bạn đang gặp phải? <span style="font-weight:400; color:var(--color-muted);">(không bắt buộc)</span></label>
+                <textarea id="mk-issue" name="issue"></textarea>
               </div>
-              <div class="field full">
-                <label for="mkt-issue">Vấn đề khách sạn của bạn đang gặp phải? <span style="font-weight:400; color:var(--color-muted);">(không bắt buộc)</span></label>
-                <textarea id="mkt-issue" name="issue"></textarea>
+              <div class="field full consent">
+                <label><input type="checkbox" name="consent" required /> <span>Tôi đồng ý để Lifrooms liên hệ và xử lý thông tin theo <a href="/chinh-sach-bao-mat">Chính sách bảo mật</a>.</span></label>
               </div>
               <div class="field full">
                 <button type="submit" class="btn btn-primary">Nhận tư vấn miễn phí</button>
               </div>
             </form>
-          </div>
+            <div class="form-success" role="status" hidden>
+              <strong>Cảm ơn anh/chị!</strong>
+              <p>Lifrooms sẽ liên hệ trong thời gian sớm nhất. Cần trao đổi ngay, nhắn <a href="https://zalo.me/0366071468" target="_blank" rel="noopener">Zalo 0366071468</a>.</p>
+            </div>
         </div>
       </div>
     </section>
@@ -326,7 +495,7 @@
             </span>
             Lifrooms
           </a>
-          <p>Giải pháp vận hành khách sạn toàn diện cho thị trường Việt Nam.</p>
+          <p>Đối tác tư vấn và vận hành kinh doanh cho khách sạn vừa và nhỏ tại Việt Nam.</p>
           <ul class="footer-contact">
             <li>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 4h16v16H4z" stroke="currentColor" stroke-width="0"/><path d="m4 6 8 6 8-6M4 6v12h16V6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -334,40 +503,38 @@
             </li>
             <li>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L14 13l5 2v4c0 1-1 2-2 2-8 0-15-7-15-15 0-1 1-2 2-2Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
-              <span>Zalo: 0366071468</span>
-            </li>
-            <li>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 22s7-6.2 7-12.5A7 7 0 0 0 5 9.5C5 15.8 12 22 12 22Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="12" cy="9.5" r="2.5" stroke="currentColor" stroke-width="1.8"/></svg>
-              <span>29 Nguyễn Hữu Cảnh, Thạnh Mỹ Tây, TP. Hồ Chí Minh</span>
+              <a href="https://zalo.me/0366071468" target="_blank" rel="noopener">Zalo: 0366071468</a>
             </li>
           </ul>
-          <div class="footer-social">
-            <a href="#" aria-label="Facebook Lifrooms" target="_blank" rel="noopener">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M14 9h3V5.5h-3c-2 0-3.5 1.6-3.5 3.5v2H8v3.5h2.5V21H14v-6.5h2.7l.5-3.5H14V9Z" fill="#fff"/></svg>
-            </a>
-            <a href="#" aria-label="TikTok Lifrooms" target="_blank" rel="noopener">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M14 3v10.7a2.6 2.6 0 1 1-2-2.53V9.1a5 5 0 1 0 4 4.9V8.6a6.7 6.7 0 0 0 4 1.3V7.4A4.1 4.1 0 0 1 16 3h-2Z" fill="#fff"/></svg>
-            </a>
-          </div>
         </div>
 
-        <div class="footer-col">
-          <h4>Dịch vụ</h4>
+        <details class="footer-col" open>
+          <summary><h4>Dịch vụ</h4></summary>
           <ul>
+            <li><a href="/#set-up">Tư vấn set up</a></li>
             <li><a href="/giai-phap/ota-management">OTA Management</a></li>
             <li><a href="/giai-phap/marketing-thue-ngoai">Marketing thuê ngoài</a></li>
             <li><a href="/giai-phap/sales-outsource">Sales thuê ngoài</a></li>
-            <li><a href="/lien-he">Tư vấn setup</a></li>
+            <li><a href="/giai-phap/hanh-chinh-ke-toan">Hành chính &amp; Kế toán</a></li>
           </ul>
-        </div>
+        </details>
 
-        <div class="footer-col">
-          <h4>Chính sách</h4>
+        <details class="footer-col" open>
+          <summary><h4>Công ty</h4></summary>
+          <ul>
+            <li><a href="/lifrooms">Về Lifrooms</a></li>
+            <li><a href="/tin-tuc">Blog</a></li>
+            <li><a href="/lien-he">Liên hệ</a></li>
+          </ul>
+        </details>
+
+        <details class="footer-col" open>
+          <summary><h4>Chính sách</h4></summary>
           <ul>
             <li><a href="/chinh-sach-bao-mat">Chính sách bảo mật</a></li>
-            <li><a href="/dieu-khoan-dieu-kien">Điều khoản &amp; điều kiện</a></li>
+            <li><a href="/dieu-khoan-su-dung">Điều khoản sử dụng</a></li>
           </ul>
-        </div>
+        </details>
       </div>
 
       <div class="footer-bottom">
@@ -382,13 +549,12 @@
   </footer>
 
   <div class="float-contact" aria-label="Liên hệ nhanh">
-    <a href="#" class="float-contact-btn messenger" aria-label="Nhắn tin Messenger" target="_blank" rel="noopener">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H8l-5 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10Z"/></svg>
-    </a>
     <a href="https://zalo.me/0366071468" class="float-contact-btn zalo" aria-label="Nhắn Zalo" target="_blank" rel="noopener">Zalo</a>
     <a href="tel:0366071468" class="float-contact-btn phone" aria-label="Gọi 0366 071 468">
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+      <span class="float-contact-label">Gọi</span>
     </a>
+    <a href="/lien-he#form" class="float-contact-btn register">Đăng ký</a>
   </div>
 
   <script>document.getElementById("year").textContent = new Date().getFullYear();</script>

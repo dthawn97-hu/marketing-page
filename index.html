@@ -28,135 +28,197 @@
       </button>
 
       <nav class="main-nav" id="main-nav">
-        <div class="nav-item">
-          <a href="/" class="nav-link" aria-current="page">Trang chủ</a>
+        <div class="nav-item has-dropdown">
+          <button type="button" class="nav-link" aria-expanded="false" aria-controls="mega-dich-vu">
+            Dịch vụ
+            <svg class="chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m6 9 6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="dropdown mega" id="mega-dich-vu">
+            <div class="mega-col">
+              <p class="mega-title">Giai đoạn set up</p>
+              <a href="/#set-up" class="mega-item">
+                <span class="mega-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18"/><path d="M5 21V8l7-5 7 5v13"/><path d="M9 21v-6h6v6"/></svg></span>
+                <span><strong>Tư vấn set up khách sạn mới</strong><small>Từ bản vẽ đến ngày đón khách</small></span>
+              </a>
+            </div>
+            <div class="mega-col">
+              <p class="mega-title">Giai đoạn vận hành</p>
+              <a href="/giai-phap/ota-management" class="mega-item">
+                <span class="mega-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12a8 8 0 0 1 13.3-5.9"/><path d="M17 3v5h-5"/><path d="M20 12a8 8 0 0 1-13.3 5.9"/><path d="M7 21v-5h5"/></svg></span>
+                <span><strong>OTA Management</strong><small>Giá, tồn phòng, trang thông tin khách sạn, đánh giá của khách</small></span>
+              </a>
+              <a href="/giai-phap/marketing-thue-ngoai" class="mega-item">
+                <span class="mega-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11v2a1 1 0 0 0 1 1h2l5 4V6l-5 4H4a1 1 0 0 0-1 1Z"/><path d="M15 9a3 3 0 0 1 0 6M18 6a7 7 0 0 1 0 12"/></svg></span>
+                <span><strong>Marketing thuê ngoài</strong><small>Tăng đặt phòng trực tiếp</small></span>
+              </a>
+              <a href="/giai-phap/sales-outsource" class="mega-item">
+                <span class="mega-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3 20a6 6 0 0 1 12 0"/><path d="M16 5a3 3 0 0 1 0 6M21 20a6 6 0 0 0-4-5.6"/></svg></span>
+                <span><strong>Sales thuê ngoài</strong><small>Phản hồi nhanh, đa dạng nguồn khách</small></span>
+              </a>
+              <a href="/giai-phap/hanh-chinh-ke-toan" class="mega-item">
+                <span class="mega-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9l-6-6Z"/><path d="M14 3v6h6M8 13h8M8 17h5"/></svg></span>
+                <span><strong>Hành chính &amp; Kế toán</strong><small>Sổ sách, thuế, lương</small></span>
+              </a>
+            </div>
+          </div>
         </div>
         <div class="nav-item">
           <a href="/lifrooms" class="nav-link">Về Lifrooms</a>
         </div>
-        <div class="nav-item has-dropdown">
-          <a href="/giai-phap/ota-management" class="nav-link" aria-haspopup="true" aria-expanded="false">
-            Giải pháp
-            <svg class="chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m6 9 6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </a>
-          <div class="dropdown">
-            <a href="/giai-phap/ota-management">OTA Management</a>
-            <a href="/giai-phap/marketing-thue-ngoai">Marketing thuê ngoài</a>
-            <a href="/giai-phap/sales-outsource">Sales thuê ngoài</a>
-            <a href="/giai-phap/hanh-chinh-ke-toan">Hành chính &amp; Kế toán</a>
-          </div>
-        </div>
         <div class="nav-item">
-          <a href="/tin-tuc" class="nav-link">Tin tức</a>
+          <a href="/tin-tuc" class="nav-link">Blog</a>
         </div>
         <div class="nav-item">
           <a href="/lien-he" class="nav-link">Liên hệ</a>
         </div>
 
         <div class="header-cta-mobile">
-          <a href="/lien-he" class="btn btn-primary">Đăng ký ngay</a>
+          <a href="/lien-he#form" class="btn btn-primary">Nhận tư vấn miễn phí</a>
         </div>
       </nav>
 
       <div class="header-cta">
-        <a href="/lien-he" class="btn btn-primary btn-sm">Đăng ký ngay</a>
+        <a href="/lien-he#form" class="btn btn-primary btn-sm">Nhận tư vấn miễn phí</a>
       </div>
     </div>
   </header>
 
   <main>
 
-    <!-- Banner dịch vụ -->
-    <section class="hero">
+    <!-- Hero: thông điệp định vị (gộp Banner dịch vụ + Am hiểu thị trường) -->
+    <section class="hero hero-home">
       <div class="container">
-        <div class="hero-slider" data-hero-slider>
-          <div class="hero-banner hero-slide is-active">
-            <img class="hero-banner-img" src="assets/img/hero.png" alt="Khách sạn vận hành cùng Lifrooms" />
-            <div class="hero-banner-overlay"></div>
-            <div class="hero-banner-content">
-              <div class="hero-cta">
-                <a href="/lien-he" class="btn btn-primary">Đăng ký ngay</a>
-              </div>
+        <div class="hero-banner">
+          <!-- Khung slider ảnh nền: thêm banner = thêm 1 img.hero-slide + 1 nút dot -->
+          <div class="hero-slider" data-hero-slider>
+            <img class="hero-slide hero-banner-img is-active" src="assets/img/hero.png" alt="Khách sạn vận hành cùng Lifrooms" width="1448" height="1086" />
+            <div class="hero-slider-dots" data-hero-dots>
+              <button type="button" class="is-active" data-index="0" aria-label="Banner 1"></button>
             </div>
           </div>
-          <div class="hero-slider-dots" data-hero-dots>
-            <button type="button" class="is-active" data-index="0" aria-label="Banner 1"></button>
+          <div class="hero-banner-overlay"></div>
+          <div class="hero-banner-content hero-copy">
+            <span class="eyebrow">Lifrooms · Đối tác tăng trưởng khách sạn</span>
+            <h1>Hiểu thị trường. Bán đúng giá. Tối ưu từng đêm phòng.</h1>
+            <p class="lead">Lifrooms tư vấn, triển khai và vận hành OTA cùng các kênh bán cho khách sạn vừa và nhỏ tại Việt Nam. Từ dữ liệu thị trường đến kế hoạch giá, nguồn khách và quy trình vận hành, chúng tôi giúp khách sạn nhìn rõ cơ hội doanh thu và hành động đúng thời điểm.</p>
+            <div class="cta-pair hero-cta">
+              <a href="/lien-he#form" class="btn btn-primary"><span class="label-full">Nhận tư vấn miễn phí</span><span class="label-short">Tư vấn</span></a>
+              <a href="#dich-vu" class="btn btn-outline"><span class="label-full">Khám phá giải pháp</span><span class="label-short">Khám phá</span></a>
+            </div>
+            <p class="hero-micro">Chia sẻ tình hình khách sạn để được tư vấn hướng ưu tiên.</p>
+          </div>
+        </div>
+
+        <div class="hero-stats-bar proof-bar">
+          <div class="stat-mini">
+            <strong class="stat-mini-num">150+</strong>
+            <span class="stat-mini-label">Khách sạn trong bộ dữ liệu phân tích</span>
+          </div>
+          <div class="stat-mini">
+            <strong class="stat-mini-num">13+</strong>
+            <span class="stat-mini-label">Thị trường đang hoạt động</span>
+          </div>
+          <div class="stat-mini">
+            <strong class="stat-mini-num">95%+</strong>
+            <span class="stat-mini-label">Khách hàng tiếp tục hợp tác</span>
+          </div>
+          <div class="stat-mini">
+            <strong class="stat-mini-num">50%+</strong>
+            <span class="stat-mini-label">Công suất phòng</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Lifrooms - Am hiểu thị trường -->
+    <!-- Dấu hiệu khách sạn đang mất doanh thu -->
     <section class="section-alt">
       <div class="container">
-        <div class="values-split" style="align-items: center;">
-          <div>
-            <span class="eyebrow">Lifrooms</span>
-            <h2 style="margin-top: 14px;">Lifrooms - <span class="hl">Am hiểu thị trường</span></h2>
-            <p style="margin-top: 16px; font-size: 16.5px;">Giải pháp tư vấn, triển khai và vận hành OTA toàn diện cho khách sạn 10-100 phòng tại Việt Nam.</p>
-            <div class="metric-grid cols-2" style="margin-top: 30px;">
-              <div class="value-card">
-                <div class="value-head">
-                  <span class="icon-badge navy">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="1"/><path d="M9 8h1M14 8h1M9 12h1M14 12h1M9 16h1M14 16h1"/></svg>
-                  </span>
-                  <h3>150+</h3>
-                </div>
-                <p>Khách sạn trong dữ liệu phân tích</p>
-              </div>
-              <div class="value-card">
-                <div class="value-head">
-                  <span class="icon-badge teal">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0f2b4a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 4 5.5 4 9s-1.5 6.5-4 9c-2.5-2.5-4-5.5-4-9s1.5-6.5 4-9Z"/></svg>
-                  </span>
-                  <h3>13</h3>
-                </div>
-                <p>Thị trường đang hoạt động</p>
-              </div>
-              <div class="value-card">
-                <div class="value-head">
-                  <span class="icon-badge navy">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m20 6-11 11-5-5"/></svg>
-                  </span>
-                  <h3>95%</h3>
-                </div>
-                <p>Khách hàng tiếp tục hợp tác</p>
-              </div>
-              <div class="value-card">
-                <div class="value-head">
-                  <span class="icon-badge teal">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0f2b4a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg>
-                  </span>
-                  <h3>đ9B</h3>
-                </div>
-                <p>Doanh thu/tháng</p>
-              </div>
+        <div class="section-head" style="max-width: 680px; margin-inline: auto; text-align: center;">
+          <h2>Phòng vẫn bán, doanh thu bỏ lỡ ở đâu?</h2>
+          <p style="margin-top: 14px; font-size: 16.5px;">Công suất, giá bán và chi phí phân phối cần được xem cùng nhau để tìm đúng điểm cần cải thiện.</p>
+        </div>
+        <div class="signal-grid">
+          <div class="signal-card">
+            <span class="signal-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 17H7a5 5 0 0 1 0-10h2"/><path d="M15 7h2a5 5 0 0 1 0 10h-2"/></svg></span>
+            <h3>Giá và tồn phòng cập nhật rời rạc</h3>
+            <p>Phòng trống, giá bán và chính sách giữa PMS, channel manager và OTA chưa đồng bộ.</p>
+            <div class="signal-chips">
+              <a href="/giai-phap/ota-management" class="chip">Quản lý OTA <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
             </div>
           </div>
-          <div class="img-placeholder" style="min-height: 420px;"></div>
+          <div class="signal-card">
+            <span class="signal-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7l6 6 4-4 8 8"/><path d="M21 11v6h-6"/></svg></span>
+            <h3>Bán hết phòng nhưng ADR thấp</h3>
+            <p>Ngày cao điểm chốt giá quá sớm; ngày thấp điểm thiếu kế hoạch kích cầu.</p>
+            <div class="signal-chips">
+              <a href="/giai-phap/ota-management" class="chip">Quản lý doanh thu và OTA <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </div>
+          </div>
+          <div class="signal-card">
+            <span class="signal-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="7" r="2.2"/><circle cx="17" cy="17" r="2.2"/><path d="M19 5 5 19"/></svg></span>
+            <h3>Nhiều đặt phòng nhưng chi phí kênh cao</h3>
+            <p>Chưa đối chiếu doanh thu sau hoa hồng và chi phí quảng cáo theo từng nguồn.</p>
+            <div class="signal-chips">
+              <a href="/giai-phap/ota-management" class="chip">OTA <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+              <a href="/giai-phap/marketing-thue-ngoai" class="chip">Marketing <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </div>
+          </div>
+          <div class="signal-card">
+            <span class="signal-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H8l-5 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10Z"/><path d="M10 8.5a2 2 0 1 1 2.5 1.9c-.3.1-.5.4-.5.7v.4M12 14h.01"/></svg></span>
+            <h3>Khách hỏi nhưng không đặt</h3>
+            <p>Phản hồi chậm, báo giá thiếu nhất quán hoặc quy trình giữ phòng chưa rõ.</p>
+            <div class="signal-chips">
+              <a href="/giai-phap/sales-outsource" class="chip">Sales <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </div>
+          </div>
+          <div class="signal-card">
+            <span class="signal-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18a14 14 0 0 1 0-18Z"/></svg></span>
+            <h3>Ít khách đặt trực tiếp</h3>
+            <p>Website, Google Business Profile và nội dung chưa hỗ trợ khách ra quyết định.</p>
+            <div class="signal-chips">
+              <a href="/giai-phap/marketing-thue-ngoai" class="chip">Marketing <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </div>
+          </div>
+          <div class="signal-card">
+            <span class="signal-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 7h8M8 12h2M14 12h2M8 16h2M14 16h2"/></svg></span>
+            <h3>Số liệu cuối tháng khó đối soát</h3>
+            <p>PMS, OTA và dòng tiền không khớp.</p>
+            <div class="signal-chips">
+              <a href="/giai-phap/hanh-chinh-ke-toan" class="chip">Hành chính và kế toán <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </div>
+          </div>
+        </div>
+        <div class="signals-cta">
+          <p>Chưa rõ khách sạn đang gặp dấu hiệu nào? Lifrooms sẽ khảo sát và chỉ ra điểm cần ưu tiên.</p>
+          <a href="/lien-he#form" class="btn btn-outline">Nhận đánh giá hiện trạng</a>
         </div>
       </div>
     </section>
 
-    <!-- Đồng hành theo đúng giai đoạn khách sạn đang ở -->
-    <section>
+    <!-- Đồng hành theo giai đoạn - giới thiệu -->
+    <section id="dich-vu">
       <div class="container">
-        <div class="section-head" style="max-width: 680px; margin-inline: auto; text-align: center;">
+        <div class="section-head" style="max-width: 720px; margin-inline: auto; text-align: center;">
           <span class="eyebrow" style="justify-content: center;">Cách Lifrooms đồng hành</span>
-          <h2>Đồng hành theo đúng giai đoạn khách sạn đang ở</h2>
-          <p style="margin-top: 16px; font-size: 16.5px;">Mỗi khách sạn cần một thứ khác nhau tuỳ thời điểm. Chọn đúng phần việc cần thuê ngoài quan trọng hơn là thuê tất cả.</p>
+          <h2>Từ ngày mở bán đầu tiên đến giai đoạn vận hành tăng trưởng</h2>
+          <p style="margin-top: 16px; font-size: 16.5px;">Lifrooms xây nền tảng bán phòng trước khai trương, sau đó cùng khách sạn quản lý giá, kênh phân phối, nguồn khách và hiệu quả vận hành theo từng giai đoạn.</p>
         </div>
+        <nav class="stage-timeline" aria-label="Giai đoạn đồng hành">
+          <a href="#set-up" class="stage-step"><span class="stage-dot">1</span><small>Trước khai trương</small><strong>Chuẩn bị khai trương</strong></a>
+          <a href="#van-hanh" class="stage-step"><span class="stage-dot">2</span><small>Sau khai trương</small><strong>Vận hành và tăng trưởng</strong></a>
+        </nav>
       </div>
     </section>
 
     <!-- Giai đoạn 1: Set Up -->
-    <section class="section-alt">
+    <section class="section-alt" id="set-up">
       <div class="container">
         <div style="display: flex; gap: 40px; align-items: flex-start; flex-wrap: wrap;">
           <div style="max-width: 260px; flex-shrink: 0;">
             <span class="eyebrow">Giai đoạn 1</span>
             <h2 style="margin-top: 14px;">Set Up</h2>
             <p style="margin-top: 14px; font-size: 15px;">Đồng hành từ lúc dự án còn trên giấy cho tới ngày đón khách đầu tiên.</p>
+            <a href="/lien-he?dich-vu=set-up#form" class="btn btn-primary" style="margin-top: 22px;">Nhận tư vấn miễn phí</a>
           </div>
           <div style="display: flex; gap: 20px; flex: 1; min-width: 280px;">
             <div style="flex: 1;">
@@ -179,63 +241,115 @@
       </div>
     </section>
 
-    <!-- Giai đoạn 2: Vận hành -->
-    <section>
+    <!-- Giai đoạn 2: Vận hành - 4 dịch vụ (≥1200px: trượt ngang 3 thẻ; 768-1199px: 2x2; mobile: list gọn) -->
+    <section id="van-hanh">
       <div class="container">
-        <div class="values-split" style="align-items: center;">
+        <div class="services-head">
           <div>
-            <span class="eyebrow">Giai đoạn 2</span>
-            <h2 style="margin-top: 14px;">Giai đoạn Vận hành</h2>
-            <p style="margin-top: 16px; font-size: 16.5px;">Nhận phần việc mà khách sạn vừa và nhỏ thường thiếu người làm chuyên nghiệp.</p>
-            <div class="feature-list" style="margin-top: 30px;">
-              <a class="feature-item" href="/giai-phap/ota-management">
-                <span class="icon-badge navy">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12a8 8 0 0 1 13.3-5.9"/><path d="M17 3v5h-5"/><path d="M20 12a8 8 0 0 1-13.3 5.9"/><path d="M7 21v-5h5"/></svg>
-                </span>
-                <div>
-                  <h3>OTA Management</h3>
-                  <p>Đồng bộ giá và tồn phòng trên mọi kênh OTA, theo dõi các chỉ số vận hành cốt lõi.</p>
-                </div>
-              </a>
-              <a class="feature-item" href="/giai-phap/marketing-thue-ngoai">
-                <span class="icon-badge teal">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0f2b4a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8Z"/></svg>
-                </span>
-                <div>
-                  <h3>Marketing thuê ngoài</h3>
-                  <p>Xây chiến lược nội dung, quảng cáo có đo lường và tăng tỷ lệ đặt phòng trực tiếp.</p>
-                </div>
-              </a>
-              <a class="feature-item" href="/giai-phap/sales-outsource">
-                <span class="icon-badge navy">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
-                </span>
-                <div>
-                  <h3>Sales outsource</h3>
-                  <p>Lập kế hoạch kinh doanh, phản hồi khách hàng 24/7 và đa dạng hóa nguồn khách.</p>
-                </div>
-              </a>
-              <a class="feature-item" href="/giai-phap/hanh-chinh-ke-toan">
-                <span class="icon-badge teal">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0f2b4a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
-                </span>
-                <div>
-                  <h3>Dịch vụ hành chính</h3>
-                  <p>Kế toán, thuế, nhân sự, tiền lương và báo cáo kiểm soát vận hành.</p>
-                </div>
-              </a>
-            </div>
-            <a href="/giai-phap/ota-management" class="btn btn-outline" style="margin-top: 30px;">Xem thêm</a>
+            <span class="eyebrow">Giai đoạn 2 · Vận hành và tăng trưởng</span>
+            <h2 style="margin-top: 14px;">Bốn giải pháp khai thác tốt hơn mỗi đêm phòng</h2>
           </div>
-          <div class="img-placeholder" style="min-height: 420px;"></div>
+          <div class="slider-nav">
+            <button type="button" class="slider-btn" data-slide="-1" aria-label="Dịch vụ trước"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg></button>
+            <button type="button" class="slider-btn" data-slide="1" aria-label="Dịch vụ tiếp theo"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button>
+          </div>
+        </div>
+        <div class="service-track" data-slider>
+          <a class="service-card" href="/giai-phap/ota-management">
+            <span class="icon-badge navy"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12a8 8 0 0 1 13.3-5.9"/><path d="M17 3v5h-5"/><path d="M20 12a8 8 0 0 1-13.3 5.9"/><path d="M7 21v-5h5"/></svg></span>
+            <h3>Quản lý và tối ưu OTA</h3>
+            <p class="service-problem">Vấn đề: Giá và tồn phòng cập nhật rời rạc</p>
+            <p class="service-does"><span class="service-label">Lifrooms làm: </span>Đồng bộ giá, tồn phòng và nội dung; theo dõi doanh thu sau hoa hồng theo kênh.</p>
+            <span class="service-link"><span>Xem dịch vụ</span> <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+          <a class="service-card" href="/giai-phap/marketing-thue-ngoai">
+            <span class="icon-badge teal"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11v2a1 1 0 0 0 1 1h2l5 4V6l-5 4H4a1 1 0 0 0-1 1Z"/><path d="M15 9a3 3 0 0 1 0 6M18 6a7 7 0 0 1 0 12"/></svg></span>
+            <h3>Marketing thuê ngoài</h3>
+            <p class="service-problem">Vấn đề: Ít khách đặt trực tiếp</p>
+            <p class="service-does"><span class="service-label">Lifrooms làm: </span>Tăng nhu cầu phù hợp và cơ hội đặt phòng trực tiếp; đo hiệu quả từ yêu cầu đến đặt phòng.</p>
+            <span class="service-link"><span>Xem dịch vụ</span> <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+          <a class="service-card" href="/giai-phap/sales-outsource">
+            <span class="icon-badge navy"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3 20a6 6 0 0 1 12 0"/><path d="M16 5a3 3 0 0 1 0 6M21 20a6 6 0 0 0-4-5.6"/></svg></span>
+            <h3>Sales thuê ngoài</h3>
+            <p class="service-problem">Vấn đề: Khách hỏi nhưng không đặt</p>
+            <p class="service-does"><span class="service-label">Lifrooms làm: </span>Chuẩn hóa tiếp nhận, báo giá, theo dõi yêu cầu; phát triển nguồn khách đại lý và doanh nghiệp theo phạm vi thống nhất.</p>
+            <span class="service-link"><span>Xem dịch vụ</span> <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+          <a class="service-card" href="/giai-phap/hanh-chinh-ke-toan">
+            <span class="icon-badge teal"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9l-6-6Z"/><path d="M14 3v6h6M8 13h8M8 17h5"/></svg></span>
+            <h3>Dịch vụ hành chính</h3>
+            <p class="service-problem">Vấn đề: Số liệu cuối tháng khó đối soát</p>
+            <p class="service-does"><span class="service-label">Lifrooms làm: </span>Kế toán, thuế, nhân sự, tiền lương, báo cáo kiểm soát vận hành...</p>
+            <span class="service-link"><span>Xem dịch vụ</span> <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
         </div>
       </div>
     </section>
 
-    <!-- Công nghệ -->
+    <!-- Tự tuyển, mua phần mềm hay thuê Lifrooms? (desktop: bảng 4 cột; mobile: 3 thẻ, Lifrooms cuối) -->
     <section class="section-alt">
       <div class="container">
-        <div class="values-split" style="align-items: center;">
+        <div class="section-head" style="max-width: 720px; margin-inline: auto; text-align: center;">
+          <h2>Khách sạn cần thêm người, thêm phần mềm hay đúng chuyên môn?</h2>
+          <p style="margin-top: 16px; font-size: 16.5px;">So sánh người thực hiện, chuyên môn cần có và khả năng duy trì công việc để chọn phương án phù hợp với nguồn lực khách sạn.</p>
+        </div>
+        <div class="compare">
+          <div class="compare-col compare-criteria" aria-hidden="true">
+            <div class="compare-head">Tiêu chí</div>
+            <p>Người làm hằng ngày</p>
+            <p>Chuyên môn</p>
+            <p>Chi phí</p>
+            <p>Dữ liệu và báo cáo</p>
+          </div>
+          <div class="compare-col">
+            <div class="compare-head"><h3>Tự tuyển nhân sự</h3></div>
+            <p><span class="compare-mark" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M6 12h12"/></svg></span><span><span class="compare-label">Người làm hằng ngày</span> Nhân sự khách sạn</span></p>
+            <p><span class="compare-mark" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M6 12h12"/></svg></span><span><span class="compare-label">Chuyên môn</span> Cần tuyển và đào tạo</span></p>
+            <p><span class="compare-mark" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M6 12h12"/></svg></span><span><span class="compare-label">Chi phí</span> Lương và chi phí quản lý</span></p>
+            <p><span class="compare-mark" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M6 12h12"/></svg></span><span><span class="compare-label">Dữ liệu và báo cáo</span> Theo quy trình nội bộ</span></p>
+          </div>
+          <div class="compare-col">
+            <div class="compare-head"><h3>Chỉ dùng phần mềm</h3></div>
+            <p><span class="compare-mark" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M6 12h12"/></svg></span><span><span class="compare-label">Người làm hằng ngày</span> Nhân sự khách sạn</span></p>
+            <p><span class="compare-mark" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M6 12h12"/></svg></span><span><span class="compare-label">Chuyên môn</span> Vẫn cần người phân tích, thao tác</span></p>
+            <p><span class="compare-mark" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M6 12h12"/></svg></span><span><span class="compare-label">Chi phí</span> Phí phần mềm và nhân sự vận hành</span></p>
+            <p><span class="compare-mark" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M6 12h12"/></svg></span><span><span class="compare-label">Dữ liệu và báo cáo</span> Theo tính năng phần mềm</span></p>
+          </div>
+          <div class="compare-col is-featured">
+            <div class="compare-head"><span class="compare-badge">Phù hợp khi thiếu người chuyên môn</span><h3>Thuê đội vận hành</h3></div>
+            <p><span class="compare-mark" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></span><span><span class="compare-label">Người làm hằng ngày</span> Đội dịch vụ phối hợp với khách sạn</span></p>
+            <p><span class="compare-mark" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></span><span><span class="compare-label">Chuyên môn</span> Bố trí theo phạm vi dịch vụ</span></p>
+            <p><span class="compare-mark" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></span><span><span class="compare-label">Chi phí</span> Phí dịch vụ theo đề xuất cụ thể</span></p>
+            <p><span class="compare-mark" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></span><span><span class="compare-label">Dữ liệu và báo cáo</span> Theo chỉ số và phạm vi đã thống nhất</span></p>
+          </div>
+        </div>
+        <p class="compare-note">Phần mềm lưu và xử lý dữ liệu; hiệu quả vẫn phụ thuộc vào người ra quyết định và vận hành.</p>
+      </div>
+    </section>
+
+    <!-- Báo cáo & công cụ vận hành (gộp từ Công nghệ): chữ giữ như demo; desktop 7/5 = báo cáo mẫu | chữ; nền tối -->
+    <section class="section-dark">
+      <div class="container">
+        <div class="report-grid">
+          <figure class="report-mock">
+            <div class="report-card" role="img" aria-label="Báo cáo mẫu, dữ liệu minh họa: công suất 78%, ADR 820.000đ, RevPAR 640.000đ; doanh thu phòng theo kênh: Booking.com 230 triệu, Agoda 160 triệu, trực tiếp 115 triệu, Traveloka 70 triệu">
+              <div class="report-head"><strong>Báo cáo tháng</strong><span class="report-tag">Dữ liệu minh họa</span></div>
+              <div class="report-kpis">
+                <div><span>Công suất (OCC)</span><strong>78%</strong></div>
+                <div><span>ADR</span><strong>820K</strong></div>
+                <div><span>RevPAR</span><strong>640K</strong></div>
+              </div>
+              <div class="report-chart">
+                <div class="report-row report-row-head"><span>Doanh thu phòng theo kênh</span><span></span><span>Doanh thu</span><span>Hoa hồng</span></div>
+                <div class="report-row"><span>Booking.com</span><span class="report-track"><i style="width: 100%"></i></span><span>230 tr</span><span>15%</span></div>
+                <div class="report-row"><span>Agoda</span><span class="report-track"><i style="width: 70%"></i></span><span>160 tr</span><span>18%</span></div>
+                <div class="report-row"><span>Trực tiếp</span><span class="report-track"><i style="width: 50%"></i></span><span>115 tr</span><span>0%</span></div>
+                <div class="report-row"><span>Traveloka</span><span class="report-track"><i style="width: 30%"></i></span><span>70 tr</span><span>17%</span></div>
+              </div>
+            </div>
+            <figcaption>Báo cáo và nguồn dữ liệu thực tế được thống nhất trong phạm vi triển khai.</figcaption>
+          </figure>
           <div>
             <span class="eyebrow">Công nghệ</span>
             <h2 style="margin-top: 14px;">Quyết định dựa trên dữ liệu,<br>không dựa trên cảm tính</h2>
@@ -243,51 +357,37 @@
             <p style="margin-top: 14px; font-size: 16.5px;">Khách sạn theo dõi mọi thứ trên dashboard: KPI, booking, phân phối OTA, cùng các chỉ số RevPAR, ADR và OCC% cập nhật theo thời gian thực.</p>
             <a href="https://app.lifrooms.com" class="btn btn-primary" style="margin-top: 30px;" target="_blank" rel="noopener">Xem dashboard</a>
           </div>
-          <div class="metric-grid cols-2">
-            <div class="value-card">
-              <div class="value-head"><h3>RevPAR</h3></div>
-              <p>Theo dõi theo thời gian thực</p>
-            </div>
-            <div class="value-card">
-              <div class="value-head"><h3>ADR</h3></div>
-              <p>Theo dõi theo thời gian thực</p>
-            </div>
-            <div class="value-card">
-              <div class="value-head"><h3>OCC%</h3></div>
-              <p>Theo dõi theo thời gian thực</p>
-            </div>
-            <div class="value-card">
-              <div class="value-head"><h3>Channel mix</h3></div>
-              <p>Theo dõi theo thời gian thực</p>
-            </div>
-          </div>
         </div>
       </div>
     </section>
 
-    <!-- Thị trường hoạt động -->
-    <section>
+    <!-- Thị trường hoạt động (desktop 5/7: bản đồ | nội dung + 2 tab; mobile: ẩn bản đồ) -->
+    <section class="section-alt">
       <div class="container">
-        <div class="values-split" style="align-items: center;">
+        <div class="market-grid">
+          <div class="market-map-wrap">
+            <svg class="market-map" viewBox="0 0 392.2 489.0" role="img" aria-label="Bản đồ Việt Nam, gồm quần đảo Hoàng Sa và Trường Sa">
+              <path d="M101.5 9.3L118.2 21.0L138.4 24.0L144.2 39.0L141.3 51.0L161.5 61.5L177.9 65.1L161.5 75.0L144.2 88.5L137.0 102.0L125.4 112.5L116.8 126.0L113.9 141.0L121.1 162.0L134.1 178.5L152.8 205.5L167.3 216.0L184.6 228.0L190.3 235.5L201.9 250.5L209.1 273.0L214.8 295.5L217.7 318.0L220.6 331.5L213.4 343.5L213.4 355.5L207.6 369.0L187.4 382.5L167.3 393.0L152.8 400.5L142.7 408.0L138.4 414.0L128.3 427.5L109.6 439.5L98.0 448.5L84.5 453.0L86.5 441.0L90.8 423.0L94.6 411.0L85.1 403.5L77.3 399.6L90.8 393.0L98.0 384.0L109.6 382.5L119.7 381.0L125.4 379.5L124.0 369.0L121.1 358.5L134.1 360.0L144.2 351.0L161.5 343.5L165.8 330.0L164.4 309.0L164.4 291.0L165.8 270.0L158.6 255.0L167.3 243.0L160.1 231.0L154.3 222.0L138.4 213.0L135.5 201.0L121.1 187.5L111.0 174.0L100.9 163.5L90.8 148.5L75.0 139.5L60.6 132.0L69.2 120.0L80.7 108.0L75.0 93.0L57.7 90.0L40.4 85.5L34.6 72.0L24.5 61.5L10.1 39.0L20.2 28.5L34.6 36.0L50.5 31.5L62.0 36.0L73.5 28.5L86.5 25.5L93.7 16.5Z M59.4 397.5L64.9 398.4L65.8 409.5L62.0 411.6L59.1 405.0Z"/>
+              <g class="market-islands"><circle cx="282.6" cy="216.0" r="2.6"/><circle cx="294.1" cy="205.5" r="2.6"/><circle cx="302.8" cy="216.0" r="2.6"/><circle cx="312.9" cy="204.0" r="2.6"/><circle cx="292.7" cy="225.0" r="2.6"/><circle cx="314.3" cy="217.5" r="2.6"/><circle cx="294.1" cy="399.0" r="2.6"/><circle cx="323.0" cy="411.0" r="2.6"/><circle cx="360.5" cy="399.0" r="2.6"/><circle cx="351.8" cy="441.0" r="2.6"/><circle cx="311.4" cy="447.0" r="2.6"/><circle cx="340.3" cy="468.0" r="2.6"/><circle cx="374.9" cy="450.0" r="2.6"/><circle cx="291.3" cy="450.0" r="2.6"/></g>
+              <g class="market-island-labels"><text x="274.0" y="187.5">QĐ. Hoàng Sa</text><text x="282.6" y="378.0">QĐ. Trường Sa</text></g>
+              <!-- Chấm thị trường: thêm khi có dữ liệu, mỗi chấm <circle class="dot-urban|dot-seasonal"><title>Tên</title></circle> -->
+            </svg>
+          </div>
           <div>
             <span class="eyebrow">Thị trường hoạt động</span>
-            <h2 style="margin-top: 14px;">13 thị trường đang hoạt động</h2>
-            <p style="margin-top: 16px; font-size: 16.5px;">Giá phòng và cơ cấu kênh bán ở Đà Lạt không giống Phú Quốc. Chúng tôi làm theo đặc thù từng thị trường và từng mùa.</p>
-            <a href="/lien-he" class="btn btn-primary" style="margin-top: 28px;">Xem chi tiết thị trường</a>
-          </div>
-          <div class="split-media">
-            <div class="img-placeholder" style="min-height: 380px;"></div>
-            <div class="float-badge">
-              <div style="display: grid; gap: 10px;">
-                <div style="display: flex; align-items: center; gap: 10px;">
-                  <span style="width: 10px; height: 10px; border-radius: 999px; background: var(--color-navy); flex-shrink: 0;"></span>
-                  <span style="font-size: 14px; color: var(--color-ink);">Thị trường ổn định quanh năm</span>
-                </div>
-                <div style="display: flex; align-items: center; gap: 10px;">
-                  <span style="width: 10px; height: 10px; border-radius: 999px; background: var(--color-teal); flex-shrink: 0;"></span>
-                  <span style="font-size: 14px; color: var(--color-ink);">Thị trường mùa vụ</span>
-                </div>
-              </div>
+            <h2 style="margin-top: 14px;">Một mức giá không phù hợp với mọi thị trường, mọi mùa</h2>
+            <p style="margin-top: 16px; font-size: 16.5px;">Nhu cầu, thời gian đặt trước và nguồn khách khác nhau theo điểm đến. Kế hoạch giá và phân phối cần phản ánh mùa vụ của chính thị trường khách sạn.</p>
+            <p class="market-count"><strong>13</strong> thị trường đang hoạt động</p>
+            <div class="market-tabs" role="tablist" aria-label="Nhóm thị trường">
+              <button type="button" role="tab" id="tab-urban" aria-selected="true" aria-controls="panel-urban">Đô thị và công tác</button>
+              <button type="button" role="tab" id="tab-seasonal" aria-selected="false" aria-controls="panel-seasonal">Du lịch mùa vụ</button>
+            </div>
+            <div class="market-panel" role="tabpanel" id="panel-urban" aria-labelledby="tab-urban">
+              <p><span class="market-dot urban"></span>Thị trường đô thị và công tác: tập trung đặt phòng ngày thường, doanh nghiệp và điều chỉnh giá theo nhu cầu đặt phòng.</p>
+              <!-- Chip tên thị trường: chỉ thêm khi có dữ liệu thị trường tương ứng -->
+            </div>
+            <div class="market-panel" role="tabpanel" id="panel-seasonal" aria-labelledby="tab-seasonal" hidden>
+              <p><span class="market-dot seasonal"></span>Thị trường du lịch mùa vụ: kế hoạch mở bán sớm, giá cao điểm và giải pháp cho ngày thấp điểm.</p>
             </div>
           </div>
         </div>
@@ -295,7 +395,7 @@
     </section>
 
     <!-- Quy trình hợp tác -->
-    <section class="section-alt">
+    <section>
       <div class="container">
         <div class="section-head">
           <span class="eyebrow">Quy trình hợp tác</span>
@@ -339,7 +439,7 @@
     </section>
 
     <!-- Đối tác & Khách hàng -->
-    <section>
+    <section class="section-alt">
       <div class="container">
         <div class="section-head" style="max-width: 680px; margin-inline: auto; text-align: center;">
           <h2>Đối tác &amp; Khách hàng</h2>
@@ -355,39 +455,58 @@
       </div>
     </section>
 
-    <!-- Khách hàng nói gì về chúng tôi -->
-    <section class="section-alt">
+    <!-- Khách hàng nói gì về chúng tôi? (slide trượt ngang: desktop 3 thẻ/khung + mũi tên; mobile 1 thẻ/khung + chấm) -->
+    <section>
       <div class="container">
         <div class="section-head" style="max-width: 680px; margin-inline: auto; text-align: center;">
           <span class="eyebrow" style="justify-content: center;">Đánh giá</span>
-          <h2>Khách hàng nói gì về chúng tôi</h2>
+          <h2>Khách hàng nói gì về chúng tôi?</h2>
         </div>
-        <div class="metric-grid">
-          <div class="value-card">
-            <div class="img-placeholder" style="min-height: 48px; width: 48px; border-radius: 999px; margin-bottom: 18px;"></div>
-            <p style="color: var(--color-muted);">Đánh giá khách hàng đang được cập nhật.</p>
+        <div class="quote-track" data-slider>
+          <figure class="quote-card">
+            <p class="quote-hotel">Lalisa Hotel Phú Quốc</p>
+            <blockquote>Hỗ trợ nhanh chóng, nhiệt tình và chuyên nghiệp. Các vấn đề phát sinh được tiếp nhận và xử lý linh hoạt, giúp khách sạn giải quyết công việc thuận lợi hơn. Cảm ơn Lifrooms đã luôn đồng hành và hỗ trợ Lalisa trong quá trình vận hành.</blockquote>
+            <figcaption><strong>Ms Xuyến</strong><span>Giám đốc khách sạn</span></figcaption>
+          </figure>
+          <figure class="quote-card">
+            <p class="quote-hotel">Chuỗi MT Collection Hotels</p>
+            <blockquote>Lifrooms làm việc nhanh chóng, chuyên nghiệp và xử lý hiệu quả các vấn đề phát sinh trên các kênh bán phòng. Điều tôi đánh giá cao là hiệu quả kinh doanh được cải thiện rõ rệt, số lượng booking tăng trưởng theo từng tháng. Hiện tại, MT Collection Hotels tin tưởng hợp tác với Lifrooms cho 3 khách sạn trong chuỗi và kỳ vọng tiếp tục có những bước phát triển mới về doanh thu OTA trong thời gian tới.</blockquote>
+            <figcaption><strong>Ms Huyền</strong><span>General Manager</span></figcaption>
+          </figure>
+          <figure class="quote-card">
+            <p class="quote-hotel">Myroom</p>
+            <blockquote>Dịch vụ của Lifrooms rất tốt, đội ngũ nhiệt tình và trách nhiệm. Lifrooms hỗ trợ xây dựng performance hiệu quả cho khách sạn và đồng hành sát sao trong quá trình triển khai. Tôi sẽ cân nhắc tiếp tục hợp tác khi mở cơ sở mới và giới thiệu Lifrooms đến các đối tác có nhu cầu.</blockquote>
+            <figcaption><strong>Mr Liêm</strong><span>Giám đốc khách sạn</span></figcaption>
+          </figure>
+          <figure class="quote-card">
+            <p class="quote-hotel">A Quiet Stay</p>
+            <blockquote>Đội ngũ Lifrooms nhiệt tình, trách nhiệm và nắm bắt yêu cầu nhanh chóng. Các yêu cầu được phản hồi kịp thời, những vấn đề phát sinh cũng được tiếp nhận và xử lý thỏa đáng. Cảm ơn Lifrooms đã luôn đồng hành và hỗ trợ khách sạn.</blockquote>
+            <figcaption><strong>Ms Nga</strong></figcaption>
+          </figure>
+        </div>
+        <div class="quote-nav">
+          <div class="slider-nav">
+            <button type="button" class="slider-btn" data-slide="-1" aria-label="Đánh giá trước"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg></button>
+            <button type="button" class="slider-btn" data-slide="1" aria-label="Đánh giá tiếp theo"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button>
           </div>
-          <div class="value-card">
-            <div class="img-placeholder" style="min-height: 48px; width: 48px; border-radius: 999px; margin-bottom: 18px;"></div>
-            <p style="color: var(--color-muted);">Đánh giá khách hàng đang được cập nhật.</p>
-          </div>
-          <div class="value-card">
-            <div class="img-placeholder" style="min-height: 48px; width: 48px; border-radius: 999px; margin-bottom: 18px;"></div>
-            <p style="color: var(--color-muted);">Đánh giá khách hàng đang được cập nhật.</p>
-          </div>
+          <div class="slider-dots" data-slider-dots aria-hidden="true"></div>
         </div>
       </div>
     </section>
 
-    <!-- Câu hỏi thường gặp -->
-    <section>
-      <div class="container">
-        <div class="section-head" style="max-width: 680px; margin-inline: auto; text-align: center;">
-          <span class="eyebrow" style="justify-content: center;">Hỏi &amp; đáp</span>
+    <!-- Câu hỏi thường gặp (nội dung giữ như demo; desktop 4/8: tiêu đề + nút liên hệ | accordion; mobile: tiêu đề, accordion, nút) -->
+    <section class="section-alt">
+      <div class="container faq-layout">
+        <div class="section-head faq-head">
+          <span class="eyebrow">Hỏi &amp; đáp</span>
           <h2>Câu hỏi thường gặp</h2>
         </div>
+        <div class="faq-cta">
+          <a href="https://zalo.me/0366071468" class="btn btn-primary" target="_blank" rel="noopener">Nhắn Zalo</a>
+          <a href="tel:0366071468" class="btn btn-outline">Gọi 0366 071 468</a>
+        </div>
         <div class="faq-list">
-          <details class="faq-item">
+          <details class="faq-item" open>
             <summary>Khách sạn quy mô bao nhiêu phòng thì phù hợp?</summary>
             <p>Lifrooms tập trung vào khách sạn 10 đến 100 phòng, hạng 0 đến 3 sao. Đây là nhóm thường thiếu nhân sự kinh doanh chuyên nghiệp và chưa tối ưu được kênh OTA.</p>
           </details>
@@ -416,9 +535,9 @@
       <div class="container">
         <h2>Bắt đầu bằng một buổi khảo sát</h2>
         <p>Chúng tôi xem số liệu hiện tại của khách sạn và chỉ ra chỗ đang mất doanh thu, trước khi bàn tới chuyện hợp tác.</p>
-        <div class="cta-banner-actions">
+        <div class="cta-pair cta-banner-actions">
           <a href="https://zalo.me/0366071468" class="btn btn-white" target="_blank" rel="noopener">Nhắn Zalo</a>
-          <a href="mailto:contact@lifrooms.com" class="btn btn-outline btn-outline-light">contact@lifrooms.com</a>
+          <a href="mailto:contact@lifrooms.com" class="btn btn-outline btn-outline-light"><span class="label-full">contact@lifrooms.com</span><span class="label-short">Email</span></a>
         </div>
       </div>
     </section>
@@ -437,7 +556,7 @@
             </span>
             Lifrooms
           </a>
-          <p>Giải pháp vận hành khách sạn toàn diện cho thị trường Việt Nam.</p>
+          <p>Đối tác tư vấn và vận hành kinh doanh cho khách sạn vừa và nhỏ tại Việt Nam.</p>
           <ul class="footer-contact">
             <li>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 4h16v16H4z" stroke="currentColor" stroke-width="0"/><path d="m4 6 8 6 8-6M4 6v12h16V6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -445,40 +564,38 @@
             </li>
             <li>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L14 13l5 2v4c0 1-1 2-2 2-8 0-15-7-15-15 0-1 1-2 2-2Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
-              <span>Zalo: 0366071468</span>
-            </li>
-            <li>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 22s7-6.2 7-12.5A7 7 0 0 0 5 9.5C5 15.8 12 22 12 22Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="12" cy="9.5" r="2.5" stroke="currentColor" stroke-width="1.8"/></svg>
-              <span>29 Nguyễn Hữu Cảnh, Thạnh Mỹ Tây, TP. Hồ Chí Minh</span>
+              <a href="https://zalo.me/0366071468" target="_blank" rel="noopener">Zalo: 0366071468</a>
             </li>
           </ul>
-          <div class="footer-social">
-            <a href="#" aria-label="Facebook Lifrooms" target="_blank" rel="noopener">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M14 9h3V5.5h-3c-2 0-3.5 1.6-3.5 3.5v2H8v3.5h2.5V21H14v-6.5h2.7l.5-3.5H14V9Z" fill="#fff"/></svg>
-            </a>
-            <a href="#" aria-label="TikTok Lifrooms" target="_blank" rel="noopener">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M14 3v10.7a2.6 2.6 0 1 1-2-2.53V9.1a5 5 0 1 0 4 4.9V8.6a6.7 6.7 0 0 0 4 1.3V7.4A4.1 4.1 0 0 1 16 3h-2Z" fill="#fff"/></svg>
-            </a>
-          </div>
         </div>
 
-        <div class="footer-col">
-          <h4>Dịch vụ</h4>
+        <details class="footer-col" open>
+          <summary><h4>Dịch vụ</h4></summary>
           <ul>
+            <li><a href="/#set-up">Tư vấn set up</a></li>
             <li><a href="/giai-phap/ota-management">OTA Management</a></li>
             <li><a href="/giai-phap/marketing-thue-ngoai">Marketing thuê ngoài</a></li>
             <li><a href="/giai-phap/sales-outsource">Sales thuê ngoài</a></li>
-            <li><a href="/lien-he">Tư vấn setup</a></li>
+            <li><a href="/giai-phap/hanh-chinh-ke-toan">Hành chính &amp; Kế toán</a></li>
           </ul>
-        </div>
+        </details>
 
-        <div class="footer-col">
-          <h4>Chính sách</h4>
+        <details class="footer-col" open>
+          <summary><h4>Công ty</h4></summary>
+          <ul>
+            <li><a href="/lifrooms">Về Lifrooms</a></li>
+            <li><a href="/tin-tuc">Blog</a></li>
+            <li><a href="/lien-he">Liên hệ</a></li>
+          </ul>
+        </details>
+
+        <details class="footer-col" open>
+          <summary><h4>Chính sách</h4></summary>
           <ul>
             <li><a href="/chinh-sach-bao-mat">Chính sách bảo mật</a></li>
-            <li><a href="/dieu-khoan-dieu-kien">Điều khoản &amp; điều kiện</a></li>
+            <li><a href="/dieu-khoan-su-dung">Điều khoản sử dụng</a></li>
           </ul>
-        </div>
+        </details>
       </div>
 
       <div class="footer-bottom">
@@ -493,13 +610,12 @@
   </footer>
 
   <div class="float-contact" aria-label="Liên hệ nhanh">
-    <a href="#" class="float-contact-btn messenger" aria-label="Nhắn tin Messenger" target="_blank" rel="noopener">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H8l-5 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10Z"/></svg>
-    </a>
     <a href="https://zalo.me/0366071468" class="float-contact-btn zalo" aria-label="Nhắn Zalo" target="_blank" rel="noopener">Zalo</a>
     <a href="tel:0366071468" class="float-contact-btn phone" aria-label="Gọi 0366 071 468">
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+      <span class="float-contact-label">Gọi</span>
     </a>
+    <a href="/lien-he#form" class="float-contact-btn register">Đăng ký</a>
   </div>
 
   <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
