@@ -52,16 +52,23 @@ document.addEventListener("DOMContentLoaded", () => {
         track.scrollBy({ left: Number(btn.dataset.slide) * step(), behavior: "smooth" });
       });
     });
-    // Optional dot indicator, one dot per card
+    // Optional dots: one button per reachable scroll position (cards - cards in view + 1)
     const dots = section.querySelector("[data-slider-dots]");
     if (!dots) return;
-    dots.innerHTML = cards.map(() => "<span></span>").join("");
     const sync = () => {
       const i = Math.round(track.scrollLeft / step());
       [...dots.children].forEach((d, k) => d.classList.toggle("is-active", k === i));
     };
-    sync();
+    const build = () => {
+      const positions = Math.max(1, cards.length - Math.round(track.clientWidth / step()) + 1);
+      dots.hidden = positions < 2;
+      dots.innerHTML = Array.from({ length: positions }, (_, i) => `<button type="button" aria-label="Trang ${i + 1}"></button>`).join("");
+      [...dots.children].forEach((dot, i) => dot.addEventListener("click", () => track.scrollTo({ left: i * step(), behavior: "smooth" })));
+      sync();
+    };
     track.addEventListener("scroll", sync, { passive: true });
+    window.addEventListener("resize", build);
+    build();
   });
 
   document.querySelectorAll('[role="tablist"]').forEach((list) => {
@@ -123,6 +130,12 @@ document.addEventListener("DOMContentLoaded", () => {
       form.hidden = true;
       form.nextElementSibling.hidden = false;
     });
+  });
+
+  // Service picker next to a CTA: point the CTA at the contact form with that service ticked
+  document.querySelectorAll("[data-service-select]").forEach((select) => {
+    const cta = select.closest("section").querySelector("[data-service-cta]");
+    select.addEventListener("change", () => { cta.href = `/lien-he?dich-vu=${select.value}#form`; });
   });
 
   // Tick a service chip in the lead form from ?dich-vu=<value> (e.g. the Set up CTA on the homepage)

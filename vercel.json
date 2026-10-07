@@ -2,5 +2,22 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": null,
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/giai-phap/ota-management",
+      "destination": "/giai-phap/quan-ly-va-toi-uu-ota",
+      "permanent": true
+    },
+    {
+      "source": "/giai-phap/sales-outsource",
+      "destination": "/sales-thue-ngoai",
+      "permanent": true
+    },
+    {
+      "source": "/giai-phap/sales-thue-ngoai",
+      "destination": "/sales-thue-ngoai",
+      "permanent": true
+    }
+  ]
 }
