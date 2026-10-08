@@ -92,188 +92,160 @@
 
   <main>
 
-    <!-- Header: ảnh banner, nội dung Lifrooms sẽ gửi lại sau -->
-    <section class="hero">
+    <!-- Hero - Quản lý và Tối ưu OTA (banner như các trang dịch vụ khác: chữ trái, ảnh phải); dòng tên kênh OTA dưới CTA, chữ xám nhỏ (mobile cuộn ngang 1 dòng) -->
+    <section class="hero hero-service">
       <div class="container">
         <div class="hero-banner">
-          <div class="img-placeholder" role="img" aria-label="Ảnh banner Quản lý và Tối ưu OTA sẽ thay vào đây">
+          <div class="img-placeholder" role="img" aria-label="Banner Quản lý và Tối ưu OTA (Lifrooms thiết kế, gửi sau) sẽ thay vào đây">
           </div>
           <div class="hero-banner-overlay"></div>
           <div class="hero-banner-content">
-            <span class="eyebrow">Giải pháp</span>
-            <h1>Quản lý và Tối ưu OTA</h1>
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+              <a href="/">Trang chủ</a>
+              <span aria-hidden="true">/</span>
+              <a href="/#dich-vu">Dịch vụ</a>
+              <span aria-hidden="true">/</span>
+              <span aria-current="page">Quản lý và Tối ưu OTA</span>
+            </nav>
+            <span class="eyebrow">Dịch vụ quản lý kênh OTA</span>
+            <h1>Bán phòng hiệu quả hơn trên từng kênh OTA</h1>
+            <p class="lead">Lifrooms quản lý nội dung hiển thị, giá và tồn phòng; theo dõi đặt phòng, chi phí kênh và doanh thu thực thu để điều chỉnh theo thị trường của khách sạn.</p>
+            <div class="hero-cta cta-pair">
+              <a href="#form" class="btn btn-primary"><span class="label-full">Nhận tư vấn miễn phí</span><span class="label-short">Tư vấn</span></a>
+              <a href="#pham-vi" class="btn btn-outline"><span class="label-full">Khám phá phạm vi dịch vụ</span><span class="label-short">Khám phá</span></a>
+            </div>
+            <p class="hero-channels"><span>Booking.com</span><span>Agoda</span><span>Traveloka</span></p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Vấn đề thường gặp -->
+    <!-- Vấn đề thường gặp: desktop 4/8 = H2 + mô tả + minh họa kênh chồng chéo | lưới 2x3 thẻ (5 vấn đề + 1 thẻ tư vấn); mobile: H2 → minh họa nhỏ → thẻ dọc -->
     <section class="section-alt">
-      <div class="container">
-        <div class="values-split">
-          <div>
-            <span class="eyebrow">Vấn đề thường gặp</span>
-            <h2 style="margin-top:14px;">Càng nhiều kênh, càng dễ rối</h2>
-            <p style="margin-top:18px; font-size:16.5px;">Nhiều khách sạn bắt đầu bằng việc tự đăng phòng, tự cập nhật giá trên Booking, Agoda, Traveloka. Với 1–2 kênh, việc này không quá khó. Nhưng khi số lượng kênh tăng lên:</p>
-            <ul class="dash-list">
-              <li>Cập nhật giá ở kênh này, quên đồng bộ ở kênh kia</li>
-              <li>Phòng đã hết nhưng một kênh khác vẫn hiển thị còn trống, dẫn đến double booking</li>
-              <li>Không biết kênh nào đang thực sự hiệu quả vì dữ liệu nằm rải rác</li>
-              <li>Thứ hạng hiển thị thấp dù giá và chất lượng phòng không hề kém</li>
-            </ul>
-            <a href="#nhan-tu-van" class="btn btn-primary" style="margin-top:28px;">Nhận tư vấn miễn phí</a>
-          </div>
-          <div class="split-media">
-            <div class="img-placeholder"></div>
-            <div class="float-badge">
-              <span class="icon-badge tone-blue">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 9v4M12 17h.01"/><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/></svg>
-              </span>
-              <div>
-                <h3>Double Booking</h3>
-                <p>Rủi ro phổ biến khi cập nhật giá &amp; phòng trống thủ công trên nhiều kênh.</p>
-              </div>
-            </div>
+      <div class="container ota-problem">
+        <div class="ota-problem-copy">
+          <span class="eyebrow">Vấn đề thường gặp</span>
+          <h2 style="margin-top:14px;">Đừng để doanh thu thất thoát trên kênh OTA</h2>
+          <p style="margin-top:16px; font-size:16.5px;">Nhiều khách sạn bắt đầu bằng việc tự đăng phòng, tự cập nhật giá trên Booking, Agoda, Traveloka. Với 1–2 kênh, việc này không quá khó. Nhưng khi số lượng kênh tăng lên, sai sót bắt đầu xuất hiện.</p>
+          <div class="channel-tangle-wrap">
+            <svg class="channel-tangle" viewBox="0 0 400 300" role="img" aria-label="Minh họa: PMS, channel manager, website và các kênh OTA nối chồng chéo với khách sạn">
+              <g class="ch-lines">
+                <path d="M64 58 C 180 40, 120 230, 324 248"/>
+                <path d="M318 50 C 200 90, 260 240, 66 244"/>
+                <path d="M346 150 C 240 60, 120 300, 66 244"/>
+                <path d="M64 58 C 90 180, 300 120, 198 270"/>
+                <path d="M318 50 C 340 160, 150 170, 198 270"/>
+                <path d="M346 150 C 280 260, 90 120, 64 58"/>
+                <path class="ch-hot" d="M200 150 C 250 110, 300 90, 318 50"/>
+                <path class="ch-hot" d="M200 150 C 150 200, 110 230, 66 244"/>
+              </g>
+              <g class="ch-hub"><circle cx="200" cy="150" r="34"/><path d="M188 162v-13l12-10 12 10v13h-8v-9h-8v9Z"/></g>
+              <g class="ch-node"><rect x="29" y="42" width="70" height="32" rx="16"/><text x="64" y="63" text-anchor="middle">PMS</text></g><g class="ch-node"><rect x="248" y="34" width="140" height="32" rx="16"/><text x="318" y="55" text-anchor="middle">Channel manager</text></g><g class="ch-node"><rect x="304" y="134" width="84" height="32" rx="16"/><text x="346" y="155" text-anchor="middle">Website</text></g><g class="ch-node"><rect x="274" y="232" width="100" height="32" rx="16"/><text x="324" y="253" text-anchor="middle">Traveloka</text></g><g class="ch-node"><rect x="161" y="254" width="74" height="32" rx="16"/><text x="198" y="275" text-anchor="middle">Agoda</text></g><g class="ch-node"><rect x="22" y="228" width="88" height="32" rx="16"/><text x="66" y="249" text-anchor="middle">Booking</text></g>
+              <g class="ch-warn"><circle cx="252" cy="104" r="11"/><text x="252" y="109" text-anchor="middle">!</text><circle cx="128" cy="206" r="11"/><text x="128" y="211" text-anchor="middle">!</text></g>
+            </svg>
           </div>
         </div>
+        <ol class="problem-cards">
+          <li class="problem-card">
+            <span class="problem-num">1</span>
+            <span class="mega-icon tone-blue"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12a8 8 0 0 1 13.3-5.9"/><path d="M17 3v5h-5"/><path d="M20 12a8 8 0 0 1-13.3 5.9"/><path d="M7 21v-5h5"/></svg></span>
+            <h3>Giá lệch, phòng lệch</h3>
+            <p>Cập nhật rời rạc giữa các kênh dễ dẫn đến sai giá hoặc đặt phòng vượt tồn.</p>
+          </li>
+          <li class="problem-card">
+            <span class="problem-num">2</span>
+            <span class="mega-icon tone-orange"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.6 13.4 13.4 20.6a2 2 0 0 1-2.8 0L3 13V3h10l7.6 7.6a2 2 0 0 1 0 2.8Z"/><path d="m9 14 5-5"/><path d="M9.5 9.5h.01M13.5 13.5h.01"/></svg></span>
+            <h3>Ưu đãi ăn vào doanh thu</h3>
+            <p>Khuyến mãi cộng dồn với hoa hồng khiến số tiền thực nhận giảm.</p>
+          </li>
+          <li class="problem-card">
+            <span class="problem-num">3</span>
+            <span class="mega-icon tone-purple"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="10" r="2"/><path d="m21 15-5-5L5 19"/></svg></span>
+            <h3>Trang phòng chưa đủ sức bán</h3>
+            <p>Hình ảnh, mô tả và chính sách chưa thuyết phục khách đặt phòng.</p>
+          </li>
+          <li class="problem-card">
+            <span class="problem-num">4</span>
+            <span class="mega-icon tone-green"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h16"/><path d="M7 16v-4M12 16V8M17 16v-6"/><path d="M19 4.5a2 2 0 1 1 1 1.7c-.5.3-1 .7-1 1.3"/><path d="M19 9.5h.01"/></svg></span>
+            <h3>Không rõ kênh nào đáng đầu tư</h3>
+            <p>Có đặt phòng nhưng thiếu số liệu về hủy phòng, chi phí và doanh thu thực thu.</p>
+          </li>
+          <li class="problem-card">
+            <span class="problem-num">5</span>
+            <span class="mega-icon tone-teal"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.6 5.6 6 .6-4.5 4 1.3 6L12 16.3 6.6 19.2l1.3-6-4.5-4 6-.6L12 3Z"/></svg></span>
+            <h3>Đánh giá bị bỏ lỡ</h3>
+            <p>Phản hồi chậm và vấn đề lặp lại ảnh hưởng quyết định của khách tiếp theo.</p>
+          </li>
+          <li class="problem-card problem-cta">
+            <h3>Chưa rõ khách sạn đang gặp dấu hiệu nào?</h3>
+            <p>Lifrooms sẽ khảo sát và chỉ ra điểm cần ưu tiên.</p>
+            <a href="#form" class="btn btn-primary btn-sm">Nhận tư vấn miễn phí</a>
+          </li>
+        </ol>
       </div>
     </section>
 
-    <!-- Phù hợp với khách sạn vừa và nhỏ -->
+    <!-- Dịch vụ phù hợp với ai (theo ảnh mẫu): trái H2 (cụm chữ nhấn xanh) + 4 thẻ ✓ xanh lá 2x2 + CTA; phải ảnh thật lễ tân/quản lý + 2 thẻ nổi (kênh bán, biểu đồ); mobile: 1 cột, ẩn ảnh -->
     <section>
-      <div class="container">
-        <div class="section-head" style="max-width: 680px; margin-inline: auto; text-align: center;">
-          <h2>Rất phù hợp với mô hình lưu trú, khách sạn vừa và nhỏ</h2>
+      <div class="container fit-grid">
+        <div>
+          <h2>Đã đến lúc xem lại <span class="text-accent">cách bán phòng trên OTA</span> nếu…</h2>
+          <ul class="fit-list">
+            <li><span class="fit-check" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg></span><span>Đang bán trên nhiều kênh và cập nhật giá, tồn phòng bằng tay.</span></li>
+            <li><span class="fit-check" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg></span><span>Chưa đối soát được doanh thu thực thu sau hoa hồng và khuyến mãi.</span></li>
+            <li><span class="fit-check" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg></span><span>Có ngày kín phòng với giá thấp, trong khi ngày thường còn nhiều phòng trống.</span></li>
+            <li><span class="fit-check" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg></span><span>Chuẩn bị mở bán hoặc cần chuẩn hóa lại trang thông tin khách sạn, ảnh và chính sách.</span></li>
+          </ul>
+          <a href="#form" class="btn btn-primary fit-cta">Nhận tư vấn miễn phí <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         </div>
-        <div class="img-placeholder" style="max-width: 960px; margin-inline: auto; aspect-ratio: 16 / 9; min-height: 0;"><span>Ảnh giao diện cập nhật giá &amp; phòng trống trên nhiều kênh</span></div>
-      </div>
-    </section>
-
-    <!-- 6 chỉ số vận hành cốt lõi -->
-    <section>
-      <div class="container">
-        <div class="panel-card">
-        <div class="section-head">
-          <span class="eyebrow">Theo dõi đúng số</span>
-          <h2>6 chỉ số vận hành cốt lõi</h2>
-          <p style="margin-top:14px; font-size:16.5px;">Chỉ nhìn booking là chưa đủ. Mỗi chỉ số cho thấy một phần của bức tranh, cần theo dõi đồng thời để biết chính xác vấn đề nằm ở đâu.</p>
-        </div>
-        <div class="metric-grid">
-          <div class="value-card flat">
-            <div class="value-head">
-              <span class="icon-badge tone-blue">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="7" r="2.2"/><circle cx="17" cy="17" r="2.2"/><path d="M19 5 5 19"/></svg>
-              </span>
-              <h3>Occupancy Rate</h3>
-            </div>
-            <p>Tỷ lệ phòng đã bán.</p>
+        <div class="fit-media">
+          <div class="img-placeholder" role="img" aria-label="Ảnh thật lễ tân hoặc quản lý khách sạn đang làm việc sẽ thay vào đây"></div>
+          <ul class="float-card fit-channels" aria-label="Các kênh OTA (minh họa)">
+            <li><span class="ch-mark" style="background:#003b95;color:#fff">B</span>Booking.com</li>
+            <li><span class="ch-mark" style="background:#ff5a5f;color:#fff">A</span>Airbnb</li>
+            <li><span class="ch-mark" style="background:#5c2d91;color:#fff">A</span>Agoda</li>
+            <li><span class="ch-mark" style="background:#fec84d;color:#1f2937">E</span>Expedia</li>
+          </ul>
+          <div class="float-card fit-chart" aria-hidden="true">
+            <svg viewBox="0 0 120 54"><path class="area" d="M4 46 L22 38 L38 42 L56 30 L74 33 L92 20 L114 8 L114 52 L4 52 Z"/><polyline points="4,46 22,38 38,42 56,30 74,33 92,20 114,8"/><path class="tip" d="M106 8h8v8"/></svg>
+            <span class="fit-chart-lines"><i></i><i></i><i></i></span>
           </div>
-          <div class="value-card flat">
-            <div class="value-head">
-              <span class="icon-badge tone-green">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2H4a2 2 0 0 0-2 2v8l10 10a2 2 0 0 0 2.8 0l8-8a2 2 0 0 0 0-2.8L12 2Z"/><circle cx="7.5" cy="7.5" r="1.5"/></svg>
-              </span>
-              <h3>ADR</h3>
-            </div>
-            <p>Giá phòng trung bình.</p>
-          </div>
-          <div class="value-card flat">
-            <div class="value-head">
-              <span class="icon-badge tone-purple">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg>
-              </span>
-              <h3>RevPAR</h3>
-            </div>
-            <p>Doanh thu / phòng sẵn có.</p>
-          </div>
-          <div class="value-card flat">
-            <div class="value-head">
-              <span class="icon-badge tone-orange">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16l-6 8v6l-4 2v-8L4 4Z"/></svg>
-              </span>
-              <h3>Conversion Rate</h3>
-            </div>
-            <p>Tỷ lệ xem → đặt phòng.</p>
-          </div>
-          <div class="value-card flat">
-            <div class="value-head">
-              <span class="icon-badge tone-teal">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4"/><path d="m9 13 6 6M15 13l-6 6"/></svg>
-              </span>
-              <h3>Cancellation Rate</h3>
-            </div>
-            <p>Tỷ lệ hủy phòng.</p>
-          </div>
-          <div class="value-card flat">
-            <div class="value-head">
-              <span class="icon-badge tone-blue">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.6 1.6 6.8L12 16.9 5.8 20.3l1.6-6.8L2.2 8.9l6.9-.6L12 2Z"/></svg>
-              </span>
-              <h3>Review Score</h3>
-            </div>
-            <p>Điểm đánh giá trung bình.</p>
-          </div>
-        </div>
         </div>
       </div>
     </section>
 
-    <!-- Lifrooms giải quyết như thế nào? -->
-    <section class="section-alt">
+    <!-- Lifrooms làm gì cho kênh OTA (theo ảnh mẫu, bỏ số thứ tự, icon cỡ Trang chủ): lưới 3x2 thẻ = icon tròn + tiêu đề + mô tả, thẻ sáng lên khi rê chuột; mobile 1 cột, mô tả thu gọn bấm để mở -->
+    <section class="section-alt" id="pham-vi">
       <div class="container">
-        <div class="values-split" style="align-items: center;">
-          <div>
-            <span class="eyebrow">Cách Lifrooms giải quyết</span>
-            <h2 style="margin-top: 14px;">Lifrooms giải quyết như thế nào?</h2>
-            <div class="feature-list" style="margin-top: 28px;">
-              <div class="feature-item">
-                <span class="icon-badge tone-blue">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12a8 8 0 0 1 13.3-5.9"/><path d="M17 3v5h-5"/><path d="M20 12a8 8 0 0 1-13.3 5.9"/><path d="M7 21v-5h5"/></svg>
-                </span>
-                <div>
-                  <h3>Đồng bộ dữ liệu tự động</h3>
-                  <p>Giá phòng, tình trạng phòng trống được cập nhật đồng thời trên tất cả kênh OTA, giảm tối đa sai sót và tình trạng double booking.</p>
-                </div>
-              </div>
-              <div class="feature-item">
-                <span class="icon-badge tone-green">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg>
-                </span>
-                <div>
-                  <h3>Theo dõi 6 chỉ số vận hành cốt lõi</h3>
-                  <p>Occupancy Rate, ADR, RevPAR, Conversion Rate, Cancellation Rate, Review Score, được theo dõi liên tục để biết chính xác vấn đề đang nằm ở khâu nào.</p>
-                </div>
-              </div>
-              <div class="feature-item">
-                <span class="icon-badge tone-purple">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 16V8"/><path d="M8 12l4-4 4 4"/></svg>
-                </span>
-                <div>
-                  <h3>Tối ưu thứ hạng hiển thị</h3>
-                  <p>Cải thiện nội dung, hình ảnh, và các yếu tố ảnh hưởng đến vị trí xếp hạng trên từng kênh, giúp khách sạn được nhìn thấy nhiều hơn, không chỉ dựa vào may rủi thuật toán.</p>
-                </div>
-              </div>
-              <div class="feature-item">
-                <span class="icon-badge tone-orange">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.6 1.6 6.8L12 16.9 5.8 20.3l1.6-6.8L2.2 8.9l6.9-.6L12 2Z"/></svg>
-                </span>
-                <div>
-                  <h3>Quản lý &amp; phản hồi đánh giá</h3>
-                  <p>Theo dõi và phản hồi review kịp thời, đúng cách, hạn chế ảnh hưởng tiêu cực đến uy tín và tỷ lệ chuyển đổi.</p>
-                </div>
-              </div>
-              <div class="feature-item">
-                <span class="icon-badge tone-teal">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2H4a2 2 0 0 0-2 2v8l10 10a2 2 0 0 0 2.8 0l8-8a2 2 0 0 0 0-2.8L12 2Z"/><circle cx="7.5" cy="7.5" r="1.5"/></svg>
-                </span>
-                <div>
-                  <h3>Điều chỉnh giá theo dữ liệu thực tế</h3>
-                  <p>Áp dụng chiến lược giá theo mùa vụ và công suất phòng, dựa trên dữ liệu, thay vì cập nhật giá theo cảm tính hoặc chạy theo đối thủ.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="img-placeholder" style="min-height: 420px;"></div>
+        <div class="section-head" style="max-width: 800px; margin-inline: auto; text-align: center;">
+          <h2>Vận hành OTA từ hiển thị đến doanh thu thực thu</h2>
+          <p style="margin-top: 14px; font-size: 16.5px;">Lifrooms quản lý nội dung, giá, phòng trống và chương trình bán trên các kênh đã thống nhất; theo dõi kết quả để điều chỉnh theo nhu cầu thị trường.</p>
+        </div>
+        <div class="group-grid">
+          <details class="group-card scope-card" open data-mobile-collapse>
+            <summary><span class="round-icon tone-blue"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 8h18M6 6h.01M8.5 6h.01"/><path d="M9 20v-8h6v8M11 14h2M11 17h2"/></svg></span><h3>Chuẩn hóa trang thông tin khách sạn</h3></summary>
+            <p>Rà soát và hoàn thiện hạng phòng, ảnh, mô tả, tiện ích, chính sách trên từng kênh; mở kênh mới khi phù hợp.</p>
+          </details>
+          <details class="group-card scope-card" open data-mobile-collapse>
+            <summary><span class="round-icon tone-teal"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h16"/><path d="M6 17v-4M10 17v-6M14 17v-5M18 17V9"/><path d="m5 9 5-4 4 3 6-5"/><path d="M17 3h3v3"/></svg></span><h3>Giá & tồn phòng hằng ngày</h3></summary>
+            <p>Thiết lập và giám sát channel manager để giá, phòng trống khớp giữa các kênh; kiểm tra chênh giá và xử lý sai lệch, giảm rủi ro overbooking.</p>
+          </details>
+          <details class="group-card scope-card" open data-mobile-collapse>
+            <summary><span class="round-icon tone-green"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="10" cy="5.5" rx="6" ry="2.5"/><path d="M4 5.5v9c0 1.4 2.7 2.5 6 2.5"/><path d="M4 10c0 1.4 2.7 2.5 6 2.5s6-1.1 6-2.5V5.5"/><circle cx="17.5" cy="17.5" r="2.5"/><path d="M17.5 13.5v1.5M17.5 20v1.5M13.5 17.5H15M20 17.5h1.5"/></svg></span><h3>Chiến lược giá theo dữ liệu</h3></summary>
+            <p>Bảng giá theo mùa, ngày trong tuần, công suất; điều chỉnh theo nhu cầu thị trường và khách sạn cùng phân khúc, trong khung giá sàn – giá trần khách sạn duyệt.</p>
+          </details>
+          <details class="group-card scope-card" open data-mobile-collapse>
+            <summary><span class="round-icon tone-rose"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10v4a1 1 0 0 0 1 1h3l8 5V4L7 9H4a1 1 0 0 0-1 1Z"/><path d="M7 15v4a2 2 0 0 0 2 2h1"/><path d="m19 9 2-1M19 12h2.5M19 15l2 1"/></svg></span><h3>Khuyến mãi & chương trình OTA</h3></summary>
+            <p>Lên lịch khuyến mãi; đề xuất tham gia chương trình của từng kênh dựa trên chi phí và hiệu quả.</p>
+          </details>
+          <details class="group-card scope-card" open data-mobile-collapse>
+            <summary><span class="round-icon tone-orange"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="17" height="13" rx="2"/><path d="M2 8h17M5 6h.01M7.5 6h.01"/><path d="M6 12h5M6 14.5h3"/><circle cx="17" cy="16" r="3.5"/><path d="m22 21-2.5-2.5"/></svg></span><h3>Tối ưu thứ hạng hiển thị</h3></summary>
+            <p>Cải thiện độ đầy đủ nội dung, ảnh, giá cạnh tranh, tỷ lệ chuyển đổi, điểm đánh giá.</p>
+          </details>
+          <details class="group-card scope-card" open data-mobile-collapse>
+            <summary><span class="round-icon tone-purple"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 14a2 2 0 0 1-2 2H9l-5 4V5a2 2 0 0 1 2-2h13a2 2 0 0 1 2 2v9Z"/><path d="m12.5 6.5.9 1.9 2.1.3-1.5 1.4.4 2.1-1.9-1-1.9 1 .4-2.1-1.5-1.4 2.1-.3.9-1.9Z"/></svg></span><h3>Quản lý & phản hồi đánh giá</h3></summary>
+            <p>Phản hồi đánh giá của khách đúng giọng thương hiệu; tổng hợp góp ý lặp lại để khách sạn cải thiện dịch vụ.</p>
+          </details>
         </div>
       </div>
     </section>
@@ -289,66 +261,368 @@
       </div>
     </section>
 
-    <!-- Form đăng ký -->
-    <section class="section-alt" id="nhan-tu-van">
+    <!-- Đầu ra bàn giao (theo ảnh mẫu, bỏ đoạn chữ nhỏ dưới H2, icon nhỏ lại): 4 thẻ tài liệu (icon PDF/Sheet + badge tần suất + mô tả + tên file) | khung "Mẫu báo cáo (đã ẩn dữ liệu)" -->
+    <section class="section-alt">
       <div class="container">
-        <div class="values-split" style="align-items:center;">
-          <div>
-            <span class="eyebrow">Nhận tư vấn</span>
-            <h2 style="margin-top:14px;">Lifrooms sẵn sàng đồng hành cùng bạn</h2>
-            <p style="margin-top:18px; font-size:16.5px;">Để lại thông tin hoặc liên hệ trực tiếp, đội ngũ Lifrooms sẽ phản hồi nhanh nhất để đánh giá tình trạng vận hành và đề xuất hướng phù hợp cho khách sạn của bạn.</p>
-            <div style="display:flex; gap:14px; flex-wrap:wrap; margin-top:26px;">
-              <a href="tel:0366071468" class="btn btn-primary">Tư vấn ngay</a>
-              <a href="/lifrooms" class="btn btn-outline">Về Lifrooms</a>
-            </div>
-            <div style="display:grid; gap:18px; margin-top:34px;">
-              <div style="display:flex; gap:14px; align-items:center;">
-                <span class="icon-badge tone-blue">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
-                </span>
-                <div>
-                  <div style="font-size:13px; color:var(--color-muted);">Gọi ngay hotline (Zalo)</div>
-                  <div style="font-weight:700; font-size:17px; color:var(--color-ink);">0366 071 468</div>
+        <div class="section-head">
+          <h2>Công việc rõ ràng, dữ liệu đủ để ra quyết định</h2>
+        </div>
+        <div class="deliv-layout">
+          <ul class="deliv-cards">
+            <li class="deliv-card tone-rose">
+              <div class="deliv-top"><span class="doc-circle"><svg width="44" height="48" viewBox="0 0 48 52" aria-hidden="true"><path d="M8 4h22l10 10v32a3 3 0 0 1-3 3H8a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3Z" fill="currentColor"/><path d="M30 4v10h10" fill="#fff" fill-opacity=".45"/><text x="24" y="33" text-anchor="middle" font-family="Manrope, sans-serif" font-weight="800" font-size="11" fill="#fff">PDF</text></svg></span><span class="freq-pill"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 10h18M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01"/></svg>Hằng tuần</span></div>
+              <h3>Rà soát trang thông tin khách sạn, giá và chính sách</h3>
+              <p>Cập nhật hình ảnh, mô tả, giá, chính sách phòng và các thông tin quan trọng khác.</p>
+              <span class="file-chip"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9l-6-6Z"/><path d="M14 3v6h6M8 12h8M8 15.5h8M8 19h4"/></svg>Tài liệu rà soát tổng quan</span>
+            </li>
+            <li class="deliv-card tone-green">
+              <div class="deliv-top"><span class="doc-circle"><svg width="44" height="48" viewBox="0 0 48 52" aria-hidden="true"><path d="M8 4h22l10 10v32a3 3 0 0 1-3 3H8a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3Z" fill="currentColor"/><path d="M30 4v10h10" fill="#fff" fill-opacity=".45"/><rect x="13" y="22" width="22" height="16" rx="1.5" fill="none" stroke="#fff" stroke-width="2"/><path d="M13 30h22M24 22v16" stroke="#fff" stroke-width="2"/></svg></span><span class="freq-pill"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 10h18M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01"/></svg>Hằng ngày</span></div>
+              <h3>Bảng giá theo mùa; lịch khuyến mãi</h3>
+              <p>Cập nhật bảng giá linh hoạt theo mùa và các chương trình khuyến mãi đang áp dụng.</p>
+              <span class="file-chip"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9l-6-6Z"/><path d="M14 3v6h6M8 12h8M8 15.5h8M8 19h4"/></svg>Bảng giá & khuyến mãi</span>
+            </li>
+            <li class="deliv-card tone-blue">
+              <div class="deliv-top"><span class="doc-circle"><svg width="44" height="48" viewBox="0 0 48 52" aria-hidden="true"><path d="M8 4h22l10 10v32a3 3 0 0 1-3 3H8a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3Z" fill="currentColor"/><path d="M30 4v10h10" fill="#fff" fill-opacity=".45"/><text x="24" y="33" text-anchor="middle" font-family="Manrope, sans-serif" font-weight="800" font-size="11" fill="#fff">PDF</text></svg></span><span class="freq-pill"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 10h18M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01"/></svg>Hằng tuần</span></div>
+              <h3>Báo cáo công suất, ADR, doanh thu và chi phí</h3>
+              <p>Phân tích hiệu quả từng kênh OTA, kênh trực tiếp và chi phí vận hành liên quan.</p>
+              <span class="file-chip"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9l-6-6Z"/><path d="M14 3v6h6M8 12h8M8 15.5h8M8 19h4"/></svg>Báo cáo hiệu suất kênh</span>
+            </li>
+            <li class="deliv-card tone-purple">
+              <div class="deliv-top"><span class="doc-circle"><svg width="44" height="48" viewBox="0 0 48 52" aria-hidden="true"><path d="M8 4h22l10 10v32a3 3 0 0 1-3 3H8a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3Z" fill="currentColor"/><path d="M30 4v10h10" fill="#fff" fill-opacity=".45"/><path d="M14 22h20M14 28h20M14 34h12" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/><circle cx="34" cy="38" r="6" fill="#fff"/><path d="m34 34.6 1 2 2.2.3-1.6 1.5.4 2.2-2-1.1-2 1.1.4-2.2-1.6-1.5 2.2-.3 1-2Z" fill="currentColor"/></svg></span><span class="freq-pill"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 10h18M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01"/></svg>Hằng ngày</span></div>
+              <h3>Danh sách phản hồi đánh giá cần xử lý</h3>
+              <p>Tổng hợp đánh giá, phân loại vấn đề và đề xuất hành động phù hợp.</p>
+              <span class="file-chip"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9l-6-6Z"/><path d="M14 3v6h6M8 12h8M8 15.5h8M8 19h4"/></svg>Danh sách xử lý đánh giá</span>
+            </li>
+          </ul>
+          <figure class="report-panel">
+            <figcaption><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M2 20h20"/></svg>Mẫu báo cáo <span>(đã ẩn dữ liệu)</span></figcaption>
+            <div class="rp-card" role="img" aria-label="Mẫu báo cáo hiệu suất kênh OTA, dữ liệu minh họa">
+              <div class="rp-head"><strong>Báo cáo hiệu suất kênh OTA</strong><span>Dữ liệu minh họa</span></div>
+              <div class="rp-kpis">
+                <div><span>Công suất</span><strong>78% <i>↗</i></strong></div>
+                <div><span>ADR</span><strong>1.250.000đ <i>↗</i></strong></div>
+                <div><span>Doanh thu</span><strong>436.800.000đ <i>↗</i></strong></div>
+              </div>
+              <div class="rp-box">
+                <p class="rp-title">Doanh thu theo kênh</p>
+                <div class="rp-donut-row">
+                  <span class="rp-donut" style="background: conic-gradient(#3b6ff0 0% 32%, #7c5cdb 32% 60%, #e07a2f 60% 78%, #3a9a6f 78% 100%);"></span>
+                  <ul class="rp-legend">
+                    <li><i style="background:#3b6ff0"></i>Booking.com<b>32%</b></li>
+                    <li><i style="background:#7c5cdb"></i>Agoda<b>28%</b></li>
+                    <li><i style="background:#e07a2f"></i>Airbnb<b>18%</b></li>
+                    <li><i style="background:#3a9a6f"></i>Trực tiếp<b>22%</b></li>
+                  </ul>
                 </div>
               </div>
-              <div style="display:flex; gap:14px; align-items:center;">
-                <span class="icon-badge tone-green">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
-                </span>
-                <div>
-                  <div style="font-size:13px; color:var(--color-muted);">Phản hồi qua email</div>
-                  <div style="font-weight:700; font-size:17px;"><a href="mailto:bd@lifrooms.com" style="color:var(--color-ink);">bd@lifrooms.com</a></div>
+              <div class="rp-split">
+                <div class="rp-box">
+                  <p class="rp-title">Xu hướng công suất</p>
+                  <svg class="rp-line" viewBox="0 0 160 60" aria-hidden="true"><path d="M0 50h160M0 30h160M0 10h160" class="grid"/><path class="area" d="M6 46 L28 38 L50 36 L72 30 L94 32 L116 26 L138 18 L156 12 L156 56 L6 56 Z"/><polyline points="6,46 28,38 50,36 72,30 94,32 116,26 138,18 156,12"/></svg>
                 </div>
+                <div class="rp-box">
+                  <p class="rp-title">Chi phí theo kênh</p>
+                  <ul class="rp-hidden">
+                    <li>OTA<i></i><i></i></li>
+                    <li>Trực tiếp<i></i><i></i></li>
+                    <li>Khác<i></i><i></i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </figure>
+        </div>
+        <p class="file-note">Danh mục đầu ra và tần suất báo cáo được thống nhất theo phạm vi dịch vụ.</p>
+      </div>
+    </section>
+
+    <!-- Cách phối hợp (theo ảnh mẫu, bỏ logo dòng đầu, tiêu đề 3 khối không icon): 3 khối nền màu = tiêu đề + mô tả + 3-4 dòng icon tròn; dải "Nhịp làm việc" 3 bước có mũi tên; mobile xếp dọc -->
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <h2>Lifrooms vận hành kênh bán, khách sạn giữ quyền quyết định</h2>
+        </div>
+        <div class="collab-grid">
+          <div class="collab-col tone-blue">
+            <h3 class="collab-title">Lifrooms</h3>
+            <p class="collab-sub">Đồng hành vận hành, tối ưu hiệu quả kênh bán cho khách sạn.</p>
+            <ul>
+              <li><span class="round-icon tone-blue"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9l-6-6Z"/><path d="M14 3v6h6M8 13h8M8 17h5"/></svg></span><span><strong>Quản lý nội dung kênh</strong>Cập nhật hình ảnh, mô tả, chính sách trên các kênh OTA.</span></li>
+              <li><span class="round-icon tone-blue"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 17 5-6 4 4 8-9"/><circle cx="3" cy="17" r="1"/><circle cx="8" cy="11" r="1"/><circle cx="12" cy="15" r="1"/><circle cx="20" cy="6" r="1"/></svg></span><span><strong>Theo dõi giá và tồn phòng</strong>Đồng bộ, kiểm soát và đề xuất điều chỉnh khi cần thiết.</span></li>
+              <li><span class="round-icon tone-blue"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 20v-6M11 20V9M16 20v-9M21 20V5"/><path d="M3 20h19"/></svg></span><span><strong>Đề xuất điều chỉnh</strong>Tối ưu giá, kênh và chiến dịch theo hiệu quả thực tế.</span></li>
+              <li><span class="round-icon tone-blue"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9l-6-6Z"/><path d="M14 3v6h6M8 12h8M8 15.5h8M8 19h4"/></svg></span><span><strong>Báo cáo kết quả</strong>Cung cấp báo cáo theo phạm vi hợp tác (định kỳ hoặc theo yêu cầu).</span></li>
+            </ul>
+          </div>
+          <div class="collab-col tone-green">
+            <h3 class="collab-title">Khách sạn</h3>
+            <p class="collab-sub">Chủ động kiểm soát, linh hoạt điều chỉnh theo nhu cầu thực tế.</p>
+            <ul>
+              <li><span class="round-icon tone-green"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="8" r="4"/><path d="M3 21a7 7 0 0 1 12.5-4.3"/><path d="M19 15v6M16 18h6"/></svg></span><span><strong>Cung cấp quyền truy cập phù hợp</strong>Cho Lifrooms và các đối tác theo đúng phạm vi.</span></li>
+              <li><span class="round-icon tone-green"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg></span><span><strong>Duyệt chính sách giá</strong>Xác nhận các mức giá, ưu đãi và chương trình khuyến mãi.</span></li>
+              <li><span class="round-icon tone-green"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 18v-6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v6"/><path d="M3 15h18M3 18v2M21 18v2"/><path d="M5 10V7a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v3"/></svg></span><span><strong>Cập nhật tình trạng phòng</strong>Thông báo thay đổi về tồn phòng, loại phòng, check-in/out.</span></li>
+              <li><span class="round-icon tone-green"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1Z"/></svg></span><span><strong>Cập nhật dịch vụ</strong>Thông tin tiện ích, dịch vụ bổ sung, thay đổi vận hành.</span></li>
+            </ul>
+          </div>
+          <div class="collab-col tone-purple">
+            <h3 class="collab-title">Cùng thống nhất</h3>
+            <p class="collab-sub">Rõ ràng ngay từ đầu, vận hành trơn tru và hạn chế rủi ro.</p>
+            <ul>
+              <li><span class="round-icon tone-purple"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/><path d="m15 9 5-5M17 4h3v3"/></svg></span><span><strong>Mục tiêu</strong>Doanh thu, công suất, thị phần kênh và trải nghiệm khách hàng.</span></li>
+              <li><span class="round-icon tone-purple"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg></span><span><strong>Quyền phê duyệt</strong>Ai phê duyệt giá, ưu đãi, thay đổi chính sách và ngân sách.</span></li>
+              <li><span class="round-icon tone-purple"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/><path d="M12 9v4M12 17h.01"/></svg></span><span><strong>Cách xử lý sự cố</strong>Quy trình phản hồi, điều chỉnh giá, hoặc tạm dừng kênh khi cần.</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="rhythm">
+          <div class="rhythm-head">
+            <span class="rhythm-icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 10h18M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01"/></svg></span>
+            <div><p class="rhythm-title">Nhịp làm việc</p><p>Phối hợp chặt chẽ – Cập nhật liên tục – Tối ưu hiệu quả.</p></div>
+          </div>
+          <ol>
+            <li><span class="round-icon tone-blue"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H8l-5 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10Z"/><path d="M8 10h.01M12 10h.01M16 10h.01"/></svg></span><span><strong>Trao đổi & thống nhất</strong>Mục tiêu, kế hoạch, thay đổi và các vấn đề phát sinh.</span></li>
+            <li><span class="round-icon tone-green"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h5"/><path d="M14 3v6h6v2"/><path d="M8 9h3M8 13h4"/><circle cx="17.5" cy="17.5" r="4"/><path d="m15.8 17.6 1.2 1.2 2.2-2.4"/></svg></span><span><strong>Thực thi & theo dõi</strong>Cập nhật, điều chỉnh và đồng bộ trên các kênh.</span></li>
+            <li><span class="round-icon tone-purple"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 20v-6M11 20V9M16 20v-9M21 20V5"/><path d="M3 20h19"/></svg></span><span><strong>Đánh giá & tối ưu</strong>Báo cáo kết quả, rút kinh nghiệm và điều chỉnh chiến lược.</span></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6 chỉ số theo dõi hiệu quả (theo ảnh mẫu): thẻ = icon tròn + viết tắt lớn + tên, công thức, câu hỏi ý nghĩa + khung biểu đồ "Minh họa"; mobile 2 cột, ẩn biểu đồ -->
+    <section class="section-alt">
+      <div class="container">
+        <div class="section-head" style="max-width: none;">
+          <h2>Hiểu rõ hiệu quả bán phòng trên từng kênh OTA</h2>
+          <p style="margin-top: 14px; font-size: 16.5px; max-width: 920px;">Lifrooms theo dõi đồng thời giá, công suất, khả năng chuyển đổi và phản hồi của khách để biết kênh bán đang hiệu quả ở đâu, cần cải thiện điểm nào.</p>
+        </div>
+        <div class="ota-kpis">
+          <div class="ota-kpi tone-blue">
+            <div class="ota-kpi-head"><span class="round-icon tone-blue"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 18v-6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v6"/><path d="M3 15h18M3 18v2M21 18v2"/><path d="M5 10V7a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v3"/></svg></span><div><span class="ota-kpi-abbr">OCC</span><h3>Công suất phòng</h3></div></div>
+            <p class="ota-kpi-formula">Công suất = (Số phòng đã bán / Tổng số phòng) × 100%</p>
+            <div class="ota-kpi-foot">
+              <p>Phòng trống có đang được khai thác tốt?</p>
+              <div class="ota-kpi-chart" aria-hidden="true">
+                <span class="ota-kpi-chart-head"><small>Minh họa</small><b class="up">↗ +12%</b></span>
+                <svg viewBox="0 0 108 48"><polygon points="4,40 18,36 32,32 46,33 60,26 74,20 88,21 104,12 104,48 4,48"/><polyline points="4,40 18,36 32,32 46,33 60,26 74,20 88,21 104,12"/></svg>
               </div>
             </div>
           </div>
+          <div class="ota-kpi tone-green">
+            <div class="ota-kpi-head"><span class="round-icon tone-green"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v4c0 1.7 3.1 3 7 3s7-1.3 7-3V6"/><path d="M5 10v4c0 1.7 3.1 3 7 3s7-1.3 7-3v-4"/><path d="M5 14v4c0 1.7 3.1 3 7 3s7-1.3 7-3v-4"/></svg></span><div><span class="ota-kpi-abbr">ADR</span><h3>Giá phòng bình quân</h3></div></div>
+            <p class="ota-kpi-formula">ADR = Tổng doanh thu phòng / Số phòng đã bán</p>
+            <div class="ota-kpi-foot">
+              <p>Khách sạn có đang bán đúng mức giá?</p>
+              <div class="ota-kpi-chart" aria-hidden="true">
+                <span class="ota-kpi-chart-head"><small>Minh họa</small><b class="up">↗ +8%</b></span>
+                <svg viewBox="0 0 108 48"><polygon points="4,42 18,40 32,34 46,32 60,34 74,30 88,26 104,16 104,48 4,48"/><polyline points="4,42 18,40 32,34 46,32 60,34 74,30 88,26 104,16"/></svg>
+              </div>
+            </div>
+          </div>
+          <div class="ota-kpi tone-purple">
+            <div class="ota-kpi-head"><span class="round-icon tone-purple"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 20v-6M11 20V9M16 20v-9M21 20V5"/><path d="M3 20h19"/></svg></span><div><span class="ota-kpi-abbr">RevPAR</span><h3>Doanh thu trên phòng sẵn có</h3></div></div>
+            <p class="ota-kpi-formula">RevPAR = ADR × OCC</p>
+            <div class="ota-kpi-foot">
+              <p>Giá và công suất kết hợp hiệu quả ra sao?</p>
+              <div class="ota-kpi-chart" aria-hidden="true">
+                <span class="ota-kpi-chart-head"><small>Minh họa</small><b class="up">↗ +15%</b></span>
+                <svg viewBox="0 0 108 48"><polygon points="4,40 18,36 32,28 46,30 60,34 74,26 88,22 104,14 104,48 4,48"/><polyline points="4,40 18,36 32,28 46,30 60,34 74,26 88,22 104,14"/></svg>
+              </div>
+            </div>
+          </div>
+          <div class="ota-kpi tone-blue">
+            <div class="ota-kpi-head"><span class="round-icon tone-blue"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 9 11 4-5 2-2 5-4-11Z"/><path d="M4 4l2 2M9 2v3M2 9h3M4.5 13.5l2-2"/></svg></span><div><span class="ota-kpi-abbr">CVR</span><h3>Tỷ lệ chuyển đổi</h3></div></div>
+            <p class="ota-kpi-formula">CVR = (Số lượt đặt phòng / Lượt xem trang phòng) × 100%</p>
+            <div class="ota-kpi-foot">
+              <p>Khách xem trang phòng có quyết định đặt?</p>
+              <div class="ota-kpi-chart" aria-hidden="true">
+                <span class="ota-kpi-chart-head"><small>Minh họa</small><b class="up">↗ +9%</b></span>
+                <svg viewBox="0 0 108 48"><polygon points="4,42 18,38 32,34 46,32 60,34 74,24 88,18 104,16 104,48 4,48"/><polyline points="4,42 18,38 32,34 46,32 60,34 74,24 88,18 104,16"/></svg>
+              </div>
+            </div>
+          </div>
+          <div class="ota-kpi tone-orange">
+            <div class="ota-kpi-head"><span class="round-icon tone-orange"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m15 9-6 6M9 9l6 6"/></svg></span><div><span class="ota-kpi-abbr">CR</span><h3>Tỷ lệ hủy</h3></div></div>
+            <p class="ota-kpi-formula">CR = (Số lượt hủy / Tổng số đặt phòng) × 100%</p>
+            <div class="ota-kpi-foot">
+              <p>Bao nhiêu đặt phòng không trở thành lượt lưu trú?</p>
+              <div class="ota-kpi-chart" aria-hidden="true">
+                <span class="ota-kpi-chart-head"><small>Minh họa</small><b class="down">↘ -6%</b></span>
+                <svg viewBox="0 0 108 48"><polygon points="4,12 18,18 32,20 46,28 60,30 74,34 88,34 104,38 104,48 4,48"/><polyline points="4,12 18,18 32,20 46,28 60,30 74,34 88,34 104,38"/></svg>
+              </div>
+            </div>
+          </div>
+          <div class="ota-kpi tone-green">
+            <div class="ota-kpi-head"><span class="round-icon tone-green"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.6 5.6 6 .6-4.5 4 1.3 6L12 16.3 6.6 19.2l1.3-6-4.5-4 6-.6L12 3Z"/></svg></span><div><span class="ota-kpi-abbr">RATING</span><h3>Điểm đánh giá</h3></div></div>
+            <p class="ota-kpi-formula">Điểm trung bình = Tổng điểm / Số đánh giá</p>
+            <div class="ota-kpi-foot">
+              <p>Trải nghiệm của khách đang được phản ánh thế nào?</p>
+              <div class="ota-kpi-chart" aria-hidden="true">
+                <span class="ota-kpi-chart-head"><small>Minh họa</small><b class="up">↗ +0.3</b></span>
+                <svg viewBox="0 0 108 48"><polygon points="4,36 18,30 32,28 46,30 60,30 74,26 88,24 104,20 104,48 4,48"/><polyline points="4,36 18,30 32,28 46,30 60,30 74,26 88,24 104,20"/></svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-          <div class="form-card left">
-            <h2 style="font-size:22px;">Khách sạn bạn đang cần tối ưu ở mảng nào?</h2>
-            <p>Để lại thông tin, đội ngũ Lifrooms sẽ đánh giá tình trạng vận hành hiện tại và đề xuất hướng phù hợp, miễn phí.</p>
+    <!-- Lộ trình 90 ngày đầu (MỚI): timeline ngang 4 mốc + thanh tiến trình chia đoạn theo thời gian; mobile timeline dọc -->
+    <section>
+      <div class="container">
+        <div class="section-head" style="max-width: 760px; margin-inline: auto; text-align: center;">
+          <span class="eyebrow" style="justify-content: center;">Lộ trình 90 ngày đầu</span>
+          <h2>Ưu tiên xử lý từ nền tảng kênh đến hiệu quả bán phòng</h2>
+        </div>
+        <div class="roadmap-bar" aria-hidden="true">
+          <span class="roadmap-bar-label">Ngày 1</span>
+          <div class="roadmap-track"><i class="tone-blue"></i><i class="tone-green"></i><i class="tone-purple"></i><i class="tone-orange"></i></div>
+          <span class="roadmap-bar-label">Ngày 90</span>
+        </div>
+        <ol class="roadmap">
+          <li class="tone-blue">
+            <span class="roadmap-dot"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></span>
+            <span class="roadmap-stage">Giai đoạn 1</span>
+            <h3>Rà soát</h3>
+            <p>Kiểm tra trang thông tin khách sạn, giá, chính sách, tồn phòng và dữ liệu đặt phòng.</p>
+          </li>
+          <li class="tone-green">
+            <span class="roadmap-dot"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4 12.5-12.5Z"/></svg></span>
+            <span class="roadmap-stage">Giai đoạn 2</span>
+            <h3>Chuẩn hóa</h3>
+            <p>Cập nhật nội dung, ảnh, cấu trúc giá và kết nối kênh theo phạm vi đã thống nhất.</p>
+          </li>
+          <li class="tone-purple">
+            <span class="roadmap-dot"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m10 8 6 4-6 4V8Z"/></svg></span>
+            <span class="roadmap-stage">Giai đoạn 3</span>
+            <h3>Vận hành</h3>
+            <p>Theo dõi kết quả và điều chỉnh giá, chương trình bán.</p>
+          </li>
+          <li class="tone-orange">
+            <span class="roadmap-dot"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 21V4"/><path d="M5 4h11l-2 4 2 4H5"/></svg></span>
+            <span class="roadmap-stage">Giai đoạn 4</span>
+            <h3>Đánh giá</h3>
+            <p>So sánh với hiện trạng ban đầu và xác định ưu tiên tiếp theo.</p>
+          </li>
+        </ol>
+        <p class="file-note">Thời lượng từng giai đoạn được thống nhất theo hiện trạng của khách sạn.</p>
+      </div>
+    </section>
 
-            <form class="form-grid" action="#" method="post">
+    <!-- FAQ - OTA Management (MỚI): accordion 1 cột, 800px, câu 1 mở sẵn -->
+    <section class="section-alt">
+      <div class="container faq-single">
+        <div class="section-head" style="text-align: center; margin-inline: auto;">
+          <span class="eyebrow" style="justify-content: center;">Hỏi &amp; đáp</span>
+          <h2>Câu hỏi thường gặp về Quản lý và Tối ưu OTA</h2>
+        </div>
+        <div class="faq-list">
+          <details class="faq-item" open>
+            <summary>Lifrooms truy cập tài khoản OTA của khách sạn thế nào?</summary>
+            <p>Khách sạn cấp quyền phù hợp với từng nền tảng. Phạm vi thao tác được thống nhất trước khi triển khai.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Khách sạn chưa có channel manager thì sao?</summary>
+            <p>Lifrooms rà soát số kênh đang bán và tư vấn công cụ phù hợp với quy mô, ngân sách.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Ai quyết định giá phòng?</summary>
+            <p>Khách sạn phê duyệt khung giá và chính sách. Lifrooms đề xuất, điều chỉnh trong phạm vi đã thống nhất.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Nếu xảy ra đặt phòng vượt tồn thì sao?</summary>
+            <p>Lifrooms phối hợp với khách sạn xử lý tình huống và rà soát nguyên nhân để hạn chế lặp lại.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Form đăng ký: khối nền màu thương hiệu, 5/7 = H2 + mô tả + 3 dòng tin cậy + Zalo/email | form (mobile: form trước) -->
+    <section class="lead-band" id="nhan-tu-van">
+      <div class="container lead-grid">
+        <div class="lead-copy">
+          <span class="eyebrow">Nhận tư vấn</span>
+          <h2 style="margin-top:14px;">Kênh OTA của bạn có đang bán đúng giá trị phòng?</h2>
+          <p style="margin-top:16px; font-size:16.5px;">Để lại thông tin, đội ngũ Lifrooms sẽ xem trang thông tin khách sạn, giá và đánh giá hiện tại của khách sạn trên OTA và chỉ ra những điểm nên ưu tiên xử lý.</p>
+          <ul class="check-list">
+            <li><span class="compare-mark" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></span><span>Trao đổi dựa trên hiện trạng khách sạn</span></li>
+            <li><span class="compare-mark" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></span><span>Đề xuất rõ phạm vi và chỉ số trước khi hợp tác</span></li>
+            <li><span class="compare-mark" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></span><span>Thời gian phản hồi sẽ được xác nhận sau</span></li>
+          </ul>
+          <div class="contact-links">
+            <a href="https://zalo.me/0366071468" class="contact-link" target="_blank" rel="noopener">
+              <span class="icon-badge tone-blue"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H8l-5 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10Z"/></svg></span>
+              <span><small>Nhắn Zalo</small><strong>0366071468</strong></span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a href="mailto:bd@lifrooms.com" class="contact-link">
+              <span class="icon-badge tone-green"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+              <span><small>Email</small><strong>bd@lifrooms.com</strong></span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="form-card left" id="form">
+          <h3 class="form-title">Khách sạn bạn đang cần tối ưu ở mảng nào?</h3>
+            <form class="form-grid" action="#" method="post" novalidate data-lead-form>
+              <input type="hidden" name="trang_nguon" value="" />
               <div class="field">
-                <label for="ota-name">Họ tên</label>
+                <label for="ota-name">Họ tên <span class="req" aria-hidden="true">*</span></label>
                 <input id="ota-name" name="name" type="text" required autocomplete="name" />
               </div>
               <div class="field">
-                <label for="ota-phone">Số điện thoại</label>
-                <input id="ota-phone" name="phone" type="tel" required autocomplete="tel" />
+                <label for="ota-phone">Số điện thoại/Zalo <span class="req" aria-hidden="true">*</span></label>
+                <input id="ota-phone" name="phone" type="tel" inputmode="tel" required autocomplete="tel" data-vn-phone />
               </div>
-              <div class="field full">
-                <label for="ota-email">Email</label>
+              <div class="field">
+                <label for="ota-email">Email <span class="req" aria-hidden="true">*</span></label>
                 <input id="ota-email" name="email" type="email" required autocomplete="email" />
+              </div>
+              <div class="field">
+                <label for="ota-hotel">Tên khách sạn</label>
+                <input id="ota-hotel" name="hotel" type="text" autocomplete="organization" />
+              </div>
+              <div class="field">
+                <label for="ota-rooms">Số phòng</label>
+                <select id="ota-rooms" name="rooms">
+                  <option value="">Chọn số phòng</option>
+                  <option>Dưới 10</option>
+                  <option>10 - 30</option>
+                  <option>31 - 60</option>
+                  <option>61 - 100</option>
+                  <option>Trên 100</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="ota-city">Tỉnh/thành</label>
+                <input id="ota-city" name="city" type="text" autocomplete="address-level1" />
+              </div>
+              <fieldset class="field full chip-group">
+                <legend>Dịch vụ quan tâm <span style="font-weight:400; color:var(--color-muted);">(chọn nhiều)</span></legend>
+                <label class="chip-check"><input type="checkbox" name="services" value="set-up" /><span>Tư vấn set up</span></label>
+                <label class="chip-check"><input type="checkbox" name="services" value="ota-management" checked /><span>Quản lý và Tối ưu OTA</span></label>
+                <label class="chip-check"><input type="checkbox" name="services" value="marketing-thue-ngoai" /><span>Marketing thuê ngoài</span></label>
+                <label class="chip-check"><input type="checkbox" name="services" value="sales-outsource" /><span>Sales thuê ngoài</span></label>
+                <label class="chip-check"><input type="checkbox" name="services" value="hanh-chinh-ke-toan" /><span>Hành chính &amp; Kế toán</span></label>
+              </fieldset>
+              <div class="field full">
+                <label for="ota-link">Link khách sạn trên Booking.com/Agoda <span style="font-weight:400; color:var(--color-muted);">(không bắt buộc)</span></label>
+                <input id="ota-link" name="link" type="url" inputmode="url" placeholder="https://www.booking.com/hotel/..." autocomplete="url" />
               </div>
               <div class="field full">
                 <label for="ota-issue">Vấn đề khách sạn của bạn đang gặp phải? <span style="font-weight:400; color:var(--color-muted);">(không bắt buộc)</span></label>
                 <textarea id="ota-issue" name="issue"></textarea>
               </div>
+              <div class="field full consent">
+                <label><input type="checkbox" name="consent" required /> <span>Tôi đồng ý để Lifrooms liên hệ và xử lý thông tin theo <a href="/chinh-sach-bao-mat">Chính sách bảo mật</a>.</span></label>
+              </div>
               <div class="field full">
                 <button type="submit" class="btn btn-primary">Nhận tư vấn miễn phí</button>
               </div>
             </form>
-          </div>
+            <div class="form-success" role="status" hidden>
+              <strong>Cảm ơn anh/chị!</strong>
+              <p>Lifrooms sẽ liên hệ trong thời gian sớm nhất. Cần trao đổi ngay, nhắn <a href="https://zalo.me/0366071468" target="_blank" rel="noopener">Zalo 0366071468</a>.</p>
+            </div>
         </div>
       </div>
     </section>
