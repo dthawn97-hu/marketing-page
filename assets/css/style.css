@@ -606,8 +606,8 @@ section { padding-block: 88px; }
 /* Revenue-leak signals (homepage): 3x2 cards, each with icon, title, short text and service chips */
 .signal-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
 .signal-card {
-  display: grid;
-  align-content: start;
+  display: flex;
+  flex-direction: column;
   gap: 10px;
   padding: 26px;
   background: var(--color-surface);
@@ -619,7 +619,9 @@ section { padding-block: 88px; }
 .signal-icon { width: 32px; height: 32px; margin-bottom: 4px; color: var(--color-accent-600); display: grid; place-items: center; }
 .signal-card h3 { font-size: 17px; }
 .signal-card p { font-size: 15px; }
-.signal-chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+/* chips pinned to the card bottom so they line up across a row */
+.signal-chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: auto; padding-top: 8px; }
+.signal-card:hover .chip[class*="tone-"]:not(:hover) { background: var(--color-surface); }
 .chip {
   display: inline-flex;
   align-items: center;
@@ -648,7 +650,8 @@ section { padding-block: 88px; }
 /* Mobile: compact list, icon left, text right */
 @media (max-width: 600px) {
   .signal-grid { grid-template-columns: 1fr; gap: 12px; }
-  .signal-card { grid-template-columns: 40px 1fr; gap: 4px 14px; padding: 18px; }
+  .signal-card { display: grid; align-content: start; grid-template-columns: 40px 1fr; gap: 4px 14px; padding: 18px; }
+  .signal-chips { margin-top: 6px; padding-top: 0; }
   .signal-icon { grid-row: span 3; width: 32px; height: 32px; margin: 0; }
   .signal-card p { font-size: 14.5px; }
 }
