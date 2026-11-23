@@ -67,7 +67,7 @@
   });
 
   /* ---------- Mobile: bỏ ngắt dòng cứng trong tiêu đề để text-wrap cân đối ---------- */
-  if (innerWidth < 768) $$(".lf h2 br, .lf .sbig br").forEach(function (br) { if (!br.closest(".pk-title")) br.replaceWith(" "); });
+  if (innerWidth < 768) $$(".lf h1 br, .lf h2 br, .lf h3 br, .lf h4 br").forEach(function (br) { br.replaceWith(" "); });
 
   /* ---------- Tab thị trường (đô thị / du lịch) ---------- */
   $$(".mk-cols").forEach(function (box) {
