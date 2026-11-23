@@ -2530,7 +2530,7 @@ textarea.inp{height:88px;padding:12px 14px;resize:vertical}
 .car .track>*{flex:0 0 calc((100% - 40px)/3)}
 .car .track>*{flex-basis:calc((100% - 20px)/2)}
 .car{overflow-x:auto}.car .track{transform:none !important}.car .track>*{flex-basis:86%}
-html{background:#E5E7EB}body{max-width:440px;margin:0 auto !important;background:#fff;box-shadow:0 0 40px rgba(0,0,0,.12)}.hdr .dd .mega{display:none !important}.hdr .dd.open .mega{display:grid !important}.mnav{display:none !important}.hdr.mopen~.mnav,.mnav.show{display:block !important}.hdr .dd>button{cursor:pointer}@media (min-width:768px){.mnav{display:none !important}}</style></head><body>
+html{background:#E5E7EB}body{max-width:440px;margin:0 auto !important;background:#fff;box-shadow:0 0 40px rgba(0,0,0,.12)}.hdr .dd .mega{display:none !important}.hdr .dd.open .mega{display:grid !important}.mnav{display:none !important}.hdr.mopen~.mnav,.mnav.show{display:block !important}.hdr .dd>button{cursor:pointer}@media (min-width:768px){.mnav{display:none !important}}</style><link rel="stylesheet" href="/assets/css/fixes.css"></head><body>
 <div class="lf">
 <div class="dcimp">
 <div class="lf">
@@ -2826,4 +2826,4 @@ b.addEventListener('click',function(e){e.stopPropagation();var o=dd.classList.to
 dd.addEventListener('mouseenter',function(){if(innerWidth>767){dd.classList.add('open');b.setAttribute('aria-expanded','true');}});
 dd.addEventListener('mouseleave',function(){if(innerWidth>767){dd.classList.remove('open');b.setAttribute('aria-expanded','false');}});});
 document.addEventListener('click',function(e){document.querySelectorAll('.hdr .dd.open').forEach(function(dd){if(!dd.contains(e.target))dd.classList.remove('open');});});
-var bg=document.querySelector('.burger'),mn=document.querySelector('.mnav');if(bg&&mn){bg.addEventListener('click',function(){mn.classList.toggle('show');});mn.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){mn.classList.remove('show');});});}})();</script></body></html>
+var bg=document.querySelector('.burger'),mn=document.querySelector('.mnav');if(bg&&mn){bg.addEventListener('click',function(){mn.classList.toggle('show');});mn.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){mn.classList.remove('show');});});}})();</script><script src="/assets/js/fixes.js"></script></body></html>
