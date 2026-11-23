@@ -1,7 +1,7 @@
 /* Lifrooms – chỉnh sửa theo feedback (nạp sau CSS inline của từng trang) */
 
 /* Tiêu đề: cân đối dòng, không xuống dòng lẻ loi */
-.lf h2, .lf h3, .lf .sbig, .lf .pk-title, .lf .qt-title, .lf .c2title, .lf .mk-title { text-wrap: balance; }
+.lf :is(h1, h2, h3, h4, p, li) { text-wrap: wrap; }
 
 /* Thẻ "Hành chính & Kế toán" (Giải pháp vận hành trọn gói): icon đường nét trong ô bo tròn */
 .lf .pk-ic.ln svg { fill: none !important; stroke: #fff; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
@@ -67,7 +67,7 @@
 
 /* Mobile: cân đối dòng cho tiêu đề, đoạn dẫn và đoạn ngắn */
 @media (max-width: 767px) {
-  .lf h1, .lf h2, .lf h3, .lf h4, .lf .pk-title, .lf .lead, .lf .head p, .lf section p[style*="max-width"] { text-wrap: balance !important; }
-  .lf p, .lf li { text-wrap: pretty; }
+  /* chữ lấp đầy chiều ngang, hết chỗ mới xuống dòng (không cân đối) */
+  .lf :is(h1, h2, h3, h4, p, li, .pk-title, .lead) { text-wrap: wrap !important; }
   .lf .pk-title { font-size: clamp(20px, 6.4vw, 28px) !important; }
 }
